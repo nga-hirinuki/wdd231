@@ -90,7 +90,8 @@ header span {
 /* ------ Main --------------------------------------------------------------------- */
 section {
   background-color: #f8e7c0;
-  margin: rem;
+  margin: 0
+  ;
 }
 
 .flex-container {
