@@ -16,12 +16,31 @@
     .navigation{
     display: block; 
     }
-
-    .navigation ul {
+        .navigation ul {
+        display: flex;
+        }
+        .navigation a {
+        border: none;
+        }
+    .flex-container{
     display: flex;
+    flex: 1;
+    gap: 1rem;
+    } 
+    .titlebar {
+    margin-top: 0;
     }
-    .navigation a {
-    border: none;
+    section, aside{
+    flex: 1;
+    margin: 1rem 0;
     }
+    main h1 {
+    margin-left: 0;   
+    }   
+    .course-listing button{  
+        flex:1;      
+        flex-basis:30%;
+         
+      }
 
 }

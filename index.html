@@ -8,7 +8,7 @@
     <meta property="og:url" content="https://nga-hirinuki.github.io/wdd231/">
     <meta property="og:title" content="Nga Hirinuki - WDD 231 - Web Frontend Development" />
     <meta property="og:image" content="images/auckland.jpg" />
-    <title>Nga Hirinuki - WDD 231 - Web Frontend Development</title>
+    <title>Nga Hirinuki - WDD 231 - Course Homepage</title>
     <meta name="description" content="WDD 231 - Web Frontend Development">
     <meta name="author" content="nga hirinuki">
     <!-- fonts -->
@@ -19,39 +19,81 @@
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
+    <!-- scripts files -->
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/course.js" defer></script>
 
 </head>
 
 <body>
+    <!-- header section -->
     <header>
-        <img src="images/akl-icon.svg" alt="akl-logo" width="1" height="1">
-        <span>Auckland Chamber of Commerce</span>
+        <img src="images/nh-icon.svg" alt="akl-logo" width="1" height="1">
+        <span>WDD 231: Web Frontend Development I</span>
         <button id="ham-btn" class="hamburger" aria-label="navigation"></button>
     </header>
     <nav id="nav-bar" class="navigation">
-        <ul >
-            <li><a href="index.html">Home</a></li>
-            <li class="current"><a href="about.html">Chamber</a></li>
-            <li><a href="events.html">Final</a></li>
-            <li><a href="contact.html">Contact</a></li>
+        <ul>
+            <li class="current"><a href="index.html">Home</a></li>
+            <li ><a href="chamber.html">Chamber Project</a></li>
+            <li><a href="events.html">Final Project</a></li>
         </ul>
     </nav>
+    <!-- main section -->
     <main>
-        <h1>Chamber</h1>
-        
+        <h1>Home</h1>
+        <div class="flex-container">
+            <section class="about">
+                <h2 class="titlebar">About Me</h2>            
+                <p>My name’s Ngatokoa, but call me Nga. I was born in the Cook Islands and grew up in New Zealand. These days, I work for myself as a freelance graphic designer. My wife and I have four kids who are all grown up now. In my free time, I’m usually watching rugby or finding any excuse to break out the power tools—I’m always up for a good DIY project. This degree is my mid-life crisis. I wanting something new and its really interesting learning code and it hard for me.</p>
+            </section>
+
+            <section class="about">
+                <h2 class="titlebar">Student photo</h2>
+                <figure >
+                    <img id="student-photo" src="images/nga_photo.webp" alt="">
+                    <figcaption>Nga Hirinuki</figcaption>
+                </figure>
+            </section>
+        </div>
+        <section id="courses"> 
+            <h2 class="titlebar">Web and Computer Programming Certificate</h2>
+            <div class="course-list">
+                <button id="all"><a href=""><h3>All</h3></a></button>
+                <button id="cse"><a href=""><h3>CSE</h3></a></span>
+                <button id="wdd"><a href=""><h3>WDD</h3></a></span>
+            </div>
+            <div id="credit-info"></div>
+            <div class="course-listing">
+                <button class="wdd-courses"><a href=""><h3>WDD 130</h3></a></button>
+                <button class="wdd-courses"><a href=""><h3>WDD 131</h3></a></button>
+                <button class="wdd-courses"><a href=""><h3>WDD 231</h3></a></button>
+                <button class="cse-courses"><a href=""><h3>CSE 110</h3></a></button>
+                <button class="cse-courses"><a href=""><h3>CSE 111</h3></a></button>
+                <button class="cse-courses"><a href=""><h3>CSE 210</h3></a></button>
+                <div id="course-details"></div>
+            </div>
+        </section>
+
     </main>
+    <!-- footer section -->
     <footer>
         <div class="social">
-        <a href=""m target="_blank"><img src="images/github.svg" alt="github" width="16" height="16"></a>
-        <a href=""m target="_blank"><img src="images/linkedin.svg" alt="linkedin" width="16" height="16"></a>
-        <a href=""m target="_blank"><img src="images/facebook.svg" alt="facebook" width="16" height="16"></a>
-        <a href=""m target="_blank"><img src="images/twitter-x.svg" alt="twitter-x" width="16" height="16"></a>
+            <a href="" m target="_blank"><img src="images/github.svg" alt="github" width="16" height="16"></a>
+            <a href="" m target="_blank"><img src="images/linkedin.svg" alt="linkedin" width="16" height="16"></a>
+            <a href="" m target="_blank"><img src="images/facebook.svg" alt="facebook" width="16" height="16"></a>
         </div>
-        <p>&copy; <span class="currentyear"></span> Nga Hirinuki</p>
-        <p>Last Modified:<span id="lastModified"></span> </p>
+        <div>
+        <p>&copy; <span id="currentyear"></span> Nga Hirinuki <br> Last Modified:<span id="lastModified"></span> </p>
+        </div>
+
     </footer>
-    <script src="scripts/navigation.js" defer></script>
-    <script src="scripts/getdates.js" defer></script>
+    
 </body>
 
 </html>
+
+
+
+

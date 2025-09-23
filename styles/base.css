@@ -1,18 +1,20 @@
-
 /* ------------------------------- Colour Scheme ------------------------------ */
-/* #386e89 Blue */
+/* #255a77    #4b83a6    #77a9c5    #c4dde8  pastel Blue */
+/* #3a8589    #6bb7bf    #91ced1    #ceeaea  pastel Light Blue */
+/* #f2c744    #c59b2d    #f7d678    #f8e7c0  pastel yellow */
+/* #cd4627    #f36d3d    #f69678    #f9cabe  pastel orange */
+/* #9e2121    #bf4141    #e07778    #f1c0c2  pastel red */
 
 /* ------------------------------- Site Wide ------------------------------ */
 
-
-
-/* ------------------------------- Header ------------------------------ */
+/* ------ Header ----------------------------------------------------------- */
 body {
   font-family: 'Roboto', sans-serif;
   margin: 0;
   padding: 0;
   color: #333;
 }
+
 header {
   display: grid;
   grid-template-columns: 24px auto 44px;
@@ -34,7 +36,8 @@ header span {
   color: #333;
 }
 
-/* ------------------------------- Header ------------------------------ */
+/* ------ Header -------------------------------------------------------------- */
+
 .hamburger {
   background: none;
   border: none;
@@ -42,69 +45,202 @@ header span {
   font-size: 2rem;
   color: #333;
 }
+
 .hamburger::before {
   content: "\2630";
- 
 }
+
 .hamburger.show::before {
   content: "\00D7";
-  
 }
 
-/* ------------------------------- Navigation ------------------------------ */
-.navigation{
+/* ------ Navigation ------------------------------------------------------------ */
+.navigation {
   display: none;
-
 }
+
 .navigation.show {
   display: block;
 }
+
 .navigation ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
+
 .navigation a {
   display: block;
   padding: .8rem 10px;
-  color: #386e89;
+  color: #9e2121;
   text-decoration: none;
   border-bottom: solid 1px #ddd;
 }
-.navigation li.current{
-  background-color: #e6edf1;
+
+.navigation li.current {
+  background-color: #f8e7c0;
 }
+
 .navigation a:hover {
-  background-color: #a8d5bc;
+  background-color: #9e2121;
+  color: #fff;
 }
 
-h1 {
-  margin-left: 10px;
+
+/* ------ Main --------------------------------------------------------------------- */
+section {
+  background-color: #f8e7c0;
+  margin: rem;
 }
 
-/* ------------------------------- Footer ------------------------------ */
+.flex-container {
+  display: block;
+}
+
+.titlebar {
+  display: block;
+  color: #fff;
+  background-color: #9e2121;
+  padding: 10px 10px;
+}
+
+.titlebar ul {
+  display: flex;
+}
+
+p {
+  margin-top: -10px;
+  line-height: 1.3;
+  padding: 10px;
+}
+
+#student-photo {
+  display: block;
+  margin: 0 auto;
+}
+
+figcaption {
+  text-align: center;
+  padding: 10px;
+}
+
+#courses {
+  background-color: #f8e7c0;
+}
+
+.course-list {
+  display: flex;
+  text-align: center;
+  list-style-type: none;
+  gap: 10px;
+  padding: 5px 10px;
+}
+
+.course-list button {
+  background-color: #9e2121;
+  justify-content: center;
+  width: 33%;
+  border-radius: 5px;
+  border: none;
+}
+
+.course-list button a {
+  text-decoration: none;
+  color: #eee;
+}
+
+.course-list h3 {
+  margin: 5%;
+  padding: 5px 10px;
+  color: #eee;
+}
+
+.course-listing {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.course-listing button {
+  flex-basis: 100%;
+  background-color:  #bf4141;
+  margin: 5px 10px;
+  border-radius: 5px;
+  border: none;
+}
+
+.course-listing button a {
+  text-decoration: none;
+  color: #eee;
+}
+
+.course-listing h3 {
+  margin: 10px;
+}
+/* Course Details Section from js */
+.course-card {
+  padding: 20px 10px 0 10px;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  margin: 10px;
+  justify-content: left;  
+  }
+  .course-card h3 {
+    margin-top: 0;
+    
+  }
+  .course-card .completed {
+    color: #4caf50;
+    font-weight: bold;
+  }
+  .course-card .not-completed {
+    color: #9e2121;
+    font-weight: bold;
+  }
+  .credit-card {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* ------ Footer ------------------------------------------------------------------- */
 footer {
-  background-color: #eee;
-  padding:1rem 10px;
+  background-color: #9e2121;
+  padding: 1rem 10px;
+  color: #fff;
 }
+
+footer p {
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+  text-align: center;
+}
+
 .social {
   display: flex;
   justify-content: center;
   column-gap: 8px;
 }
+
 .social a {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: #ccc solid 1px;
+
   width: 44px;
   height: 44px;
   border-radius: 22px;
 }
+
 .social img {
   width: 22px;
   height: 22px;
 }
+
 .social a:hover {
   background-color: #ddd;
 }
