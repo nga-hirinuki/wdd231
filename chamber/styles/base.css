@@ -149,7 +149,7 @@ figcaption {
 
 .member-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    box-shadow: 0 5px 15px #9e2121;
 }
 
 /* Member image */
@@ -208,7 +208,7 @@ figcaption {
 
 /* ------ Footer ------------------------------------------------------------------- */
 footer {
-  display: grid;
+  display: block;
   grid-template-columns: 300px auto 260px;
   padding: 15px ;
   align-items: end;
@@ -230,7 +230,7 @@ footer p {
 
 .social {
   display: flex;
-  justify-content: center;
+  justify-content: left;
   column-gap: 8px;
 }
 
