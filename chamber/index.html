@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Social Tags -->
-    <meta property="og:image" content="/images" />
+    <meta property="og:image" content="images/socialmedia.webp" />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://nga-hirinuki.github.io/chamber/directory/">
+    <meta property="og:url" content="https://nga-hirinuki.github.io/chamber/index">
     <meta property="og:title" content="Auckland Chamber of Commerce Homepage">
     <meta property="og:description" content="Auckland Chamber of Commerce Homepage." />
     
@@ -26,7 +26,7 @@
     <!-- scripts files -->
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/getdates.js" defer></script>
-    <script src="scripts/members.js" defer></script>
+    <script src="scripts/membersRandom.js" defer></script>
 
 </head>
 <body>
@@ -43,13 +43,36 @@
             <li><a href="chamber/directory.html">Final Project</a></li>
         </ul>
     </nav>
+    <header class="slideshow">
+  <img src="images/hero-function.webp" class="fade" />
+  <img src="images/hero-greetings.webp" class="fade" />
+</div></header>
 <main>
-    <div class="menu">
+    <h1>Home</h1>
+    <section class="events-container">
+        <article class="events" >
+            <h2>Great Minds Don’t Network Themselves</h2>
+            <p>Make meaningful business connections that move you forward — one meetup at a time.</p>
+            <button>Let’s Meet Up</button>
+        </article>
+        <aside class="weather">
+            <h1>Weather</h1>
+        </aside>
+        <aside class="weather"><h1>Weather</h1></aside>
+   </section>
+
+    
+    
+    
+     <div class="menu">
         <button id="grid">Grid</button>
         <button id="list">List</button>
     </div>
     <div id="card"></div>
+   
+    
 </main>
+
 <footer>
      <div>
         <p> Auckland Chamber of Commerce <br>127 Universal Drive <br>Henderson, Auckland 0610<br>info@Aklcoc.org<br>(064) 09 628 3244</p>
@@ -60,7 +83,8 @@
             <a href="" m target="_blank"><img src="images/facebook.svg" alt="facebook" width="16" height="16"></a>
         </div>
         <div>
-        <p>WDD231 Class Project <br>Nga Hirinuki<br>&copy; <span id="currentyear"></span> Auckland Chamber of Commerce <br> Last Modification:<span id="lastModified"></span> </p>
+        <p>WDD231 Class Project <br>Nga Hirinuki<br>&copy; <span id="currentyear"></span> Auckland Chamber of Commerce <br> 
+            Web Sources<br> Last Modification:<span id="lastModified"></span> </p>
         </div>
 </footer>
 </body>

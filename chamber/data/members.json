@@ -2,73 +2,59 @@
   "members": [
     {
       "name": "HarbourTech Solutions",
-      "address": "12 Quay Street, Auckland CBD, Auckland 1010, New Zealand",
+      "address": "12 Quay Street, Auckland CBD, Auckland",
       "phone": "+64 9 555 1234",
       "website": "https://www.harbourtech.co.nz",
       "imageUrl": "images/harbourtech.webp",
-      "membership_level": "Gold Membership",
-      "email": "info@harbourtech.co.nz",
-      "description": "IT consulting and cloud integration services for businesses across New Zealand."
+      "membership_level": "Gold Member"
     },
     {
       "name": "Skyline Creative Studio",
-      "address": "85 Karangahape Road, Newton, Auckland 1010, New Zealand",
+      "address": "85 Karangahape Road, Newton, Auckland",
       "phone": "+64 9 555 5678",
       "website": "https://www.skylinecreative.co.nz",
       "imageUrl": "images/skyline.webp",
-      "membership_level": "Silver Membership",
-      "email": "hello@skylinecreative.co.nz",
-      "description": "Graphic design, branding, and marketing agency specializing in digital campaigns."
+      "membership_level": "Silver Member"
     },
     {
       "name": "Aroha Wellness Centre",
-      "address": "230 Ponsonby Road, Ponsonby, Auckland 1011, New Zealand",
+      "address": "230 Ponsonby Road, Ponsonby, Auckland",
       "phone": "+64 9 555 7890",
       "website": "https://www.arohawellness.co.nz",
       "imageUrl": "images/aroha.webp",
-      "membership_level": "Bronze Membership",
-      "email": "contact@arohawellness.co.nz",
-      "description": "Holistic wellness services including yoga, massage, and nutrition consultations."
+      "membership_level": "Bronze Member"
     },
     {
       "name": "Pacific Freight Logistics",
-      "address": "49 Onehunga Mall, Onehunga, Auckland 1061, New Zealand",
+      "address": "49 Onehunga Mall, Onehunga, Auckland",
       "phone": "+64 9 555 2468",
       "website": "https://www.pacificfreight.co.nz",
       "imageUrl": "images/pacificfreight.webp",
-      "membership_level": "Gold Membership",
-      "email": "support@pacificfreight.co.nz",
-      "description": "Freight forwarding, warehousing, and distribution services across Australasia."
+      "membership_level": "Gold Member"
     },
     {
       "name": "KiwiBuild Contractors",
-      "address": "14 Dominion Road, Mt Eden, Auckland 1024, New Zealand",
+      "address": "14 Dominion Road, Mt Eden, Auckland",
       "phone": "+64 9 555 3344",
       "website": "https://www.kiwibuild.co.nz",
       "imageUrl": "images/kiwibuild.webp",
-      "membership_level": "Silver Membership",
-      "email": "projects@kiwibuild.co.nz",
-      "description": "Residential and commercial construction with a focus on sustainable building practices."
+      "membership_level": "Silver Member"
     },
     {
       "name": "UrbanEats Cafe",
-      "address": "33 Queen Street, Auckland CBD, Auckland 1010, New Zealand",
+      "address": "33 Queen Street, Auckland CBD, Auckland",
       "phone": "+64 9 555 9090",
       "website": "https://www.urbaneats.co.nz",
       "imageUrl": "images/urbaneats.webp",
-      "membership_level": "Bronze Membership",
-      "email": "bookings@urbaneats.co.nz",
-      "description": "Modern cafe serving locally sourced food and specialty coffee in the heart of the city."
+      "membership_level": "Bronze Member"
     },
     {
       "name": "North Shore Marine",
-      "address": "76 Wairau Road, Glenfield, Auckland 0627, New Zealand",
+      "address": "76 Wairau Road, Glenfield, Auckland",
       "phone": "+64 9 555 4455",
       "website": "https://www.northshoremarine.co.nz",
       "imageUrl": "images/northshoremarine.webp",
-      "membership_level": "Silver Membership",
-      "email": "sales@northshoremarine.co.nz",
-      "description": "Boat sales, repairs, and marine equipment supplier serving the Auckland region."
+      "membership_level": "Silver Member"     
     }
   ]
 

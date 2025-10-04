@@ -4,7 +4,6 @@ const cardsContainer = document.querySelector('#card');
 // Step 2: Display function
 const displayMembers = (membersArray) => {
     membersArray.forEach((member) => {
-
         // Create card container
         const card = document.createElement('section');
         card.classList.add('member-card', 'list'); // default to list layout
@@ -28,7 +27,7 @@ const displayMembers = (membersArray) => {
         info.innerHTML = `
             ${member.address}<br>
             ${member.phone}<br>
-            ${member.website}
+            <a href="${member.website}" target="_blank">${member.website}</a>
         `;
 
         // Append elements to card
@@ -48,7 +47,28 @@ const getMembersData = async (url) => {
         const response = await fetch(url);
         if (!response.ok) throw new Error(`HTTP error! Status: ${response.status}`);
         const data = await response.json();
-        displayMembers(data.members);
+        console.log("Fetched data:", data);
+
+        if (!data.members || !Array.isArray(data.members)) {
+            console.error("No members array found in JSON");
+            cardsContainer.textContent = "No members available.";
+            return;
+        }
+
+        const filteredMembers = data.members.filter(member => 
+            ["gold member", "silver member"].includes(member.membership_level.toLowerCase().trim())
+        );
+
+        if (filteredMembers.length === 0) {
+            console.warn("No Gold or Silver members found");
+            cardsContainer.textContent = "No Gold or Silver members available.";
+            return;
+        }
+
+        const shuffled = filteredMembers.sort(() => 0.5 - Math.random());
+        const randomThree = shuffled.slice(0, 3);
+
+        displayMembers(randomThree);
     } catch (error) {
         console.error("Fetch error:", error);
         cardsContainer.textContent = "Failed to load members.";

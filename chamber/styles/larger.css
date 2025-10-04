@@ -42,34 +42,79 @@
         flex-basis:30%;
          
       }
-    /* business cards */
-    #card {
+    /* LIST VIEW - Desktop */
+    #card.list-view {
+        flex-direction: column;        
+    }
+
+    #card.list-view .member-card {
+        flex-direction: row;
+        align-items: center;
+        gap: 2rem;
+        padding: 1.5rem;
+        margin: 0;
+    }
+
+    #card.list-view .member-card img {
+        width: 100px;
+        height: 100px;
+    }
+
+    /* GRID VIEW - Desktop */
+    #card.grid-view {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: .5rem;
+        margin: 10px;
+        
+    }
+
+    #card.grid-view .member-card {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        max-width: 85%;
+    }
+
+    #card.grid-view .member-card img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .member-card p {
+        font-size: 16px;
+    margin: 0.25rem 0;
+    
+}
+#card.list-view .member-card h2 {
+    font-size: 25px;
+}
+footer{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-    padding: 20px;
-    }
-    .member-card {
-    display: block;
-    }
-    .member-card img {
-    width: 150px;
-    height: 150px;
-    }
-    .member-info {
-    text-align: center;
-    padding: 0;
-    margin: 0;
-    }
-    footer {
-    display: grid;
-    grid-template-columns: 300px auto 260px;
-    padding: 15px ;
-    border-bottom: solid 1px #ddd;
-   
-    }
+    grid-template-columns: 1fr 1fr 1fr;
+}
+footer p {
+  margin: 0;
+  padding: 10px;
+  line-height: 1.5;
+  text-align: left;
+  justify-items: top ;
+}
+.events-container{
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 15px; /* optional spacing */
+  background-color: white;
+}
+.slideshow {
+  position: relative;
+  width: 900px;   /* adjust to your image size */
+  height: 300px;
+  overflow: hidden;
+}
+
+}
 
 
      
-}
 
