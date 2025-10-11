@@ -1,0 +1,72 @@
+@media only screen and (min-width: 38rem) {
+
+    header {
+        grid-template-columns: 24px auto ; 
+    }
+    .events {
+        display: grid;
+        grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        gap: 1rem;
+    }
+    #main-title, .home-container, .current-weather, .weather-container, .titlebar {
+        margin: 0;
+    }
+ 
+    .home-container {
+        grid-column:1/4;
+    }
+    .current-weather {
+        grid-column:4/6;
+    }
+    .current-weather h4{
+        flex: 1 100%;
+       margin: 0  ;
+       height: 8%;
+    }
+
+    .current-weather #graphic {
+    margin: 0;
+    }
+    .weather-text {
+        width: 120px;
+        padding: 0;
+        margin: 0 0 -15px 0;
+    }
+    .weather-text p{
+        margin-bottom: -15px;
+        font-size:small
+    
+    }
+   
+    .weather-container {
+        grid-column: 6/ 8;
+    }
+
+    .weather-container #todaytemp {
+       margin-top: 10px;
+    }
+
+    .hero {
+    width: 900px; /* adjust as needed */
+    height: 300px; /* adjust as needed */
+    background-image: url('../images/hero-function.webp');
+    }
+    .hero h1 {
+    display: block;
+    color: #9e2121;
+    font-size: 3rem;
+    text-align: right;
+    margin: 15px;
+    padding-left: 550px;
+    
+   
+   
+    }
+    .hero p {
+    display: block;
+    color:#103a51;
+    font-size: 1.2rem;
+    text-align: right;
+    width:auto
+    }
+}
