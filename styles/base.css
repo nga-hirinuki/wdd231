@@ -186,10 +186,12 @@ figcaption {
   border: 1px solid #ccc;
   border-radius: 10px;
   margin: 10px;
-  justify-content: left;  
+  justify-content: left; 
+  
   }
   .course-card h3 {
     margin-top: 0;
+    color:#002333 
   }
   .course-card .completed {
     font-weight: bold;
