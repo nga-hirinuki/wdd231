@@ -50,6 +50,7 @@ header span {
 
 .hamburger::before {
   content: "\2630";
+  color:#fff;
 }
 
 .hamburger.show::before {
