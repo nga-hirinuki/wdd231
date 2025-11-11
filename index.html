@@ -1,37 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Social Tags -->
-    <meta property="og:url" content="https://nga-hirinuki.github.io/wdd230/">
-    <meta property="og:type" content="portal" />
-    <meta property="og:title" content="Nga Hirinuki - WDD 230 - Web Frontend Development" />
-    <meta property="og:description" content="My githup site for Web Frontend Development" />
-    <meta property="og:image" content="images/auckland.jpg" />
-    <title>Nga Hirinuki - WDD 230 - Web Frontend Development</title>
-    <meta name="description" content="WDD 230 - Web Frontend Development">
-    <meta name="description" content="Course assignment portal">
+    <meta property="og:image" content="images/socialmedia.webp" />
+    <meta property="og:url" content="https://nga-hirinuki.github.io/wdd231/">
+    <meta property="og:title" content="Nga Hirinuki - WDD 231 - Web Frontend Development">
+    <meta property="og:description" content="Web & Computer Programming Certificate that equips you with coding, web design, and software development skills for building efficient, user-friendly digital solutions." />
+    
+    <title>Nga Hirinuki - WDD 231 - Course Homepage</title>
+    <meta name="description" content="WDD 231 - Web Frontend Development">
     <meta name="author" content="nga hirinuki">
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <!-- css files -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+     <link rel="icon" href="images/NH.ico" type="image/x-icon">
+     <!-- css files -->
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
-    <link rel="icon" href="images/favicon.ico">
+    <!-- scripts files -->
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/course.js" defer></script>
+
 </head>
+
 <body>
-<header>
-    <h1>Whats up</h1>
-</header>
-<main>
-</main>
-<footer>
-</footer>
+    <!-- header section -->
+    <header>
+        <img src="images/nh.svg" alt="ngahirinuki-logo" width="1" height="1">
+        <span>WDD 231: Web Frontend Development I</span>
+        <button id="ham-btn" class="hamburger" aria-label="navigation"></button>
+    </header>
+    <nav id="nav-bar" class="navigation">
+        <ul>
+            <li class="current"><a href="/index.html">Home</a></li>
+            <li ><a href="chamber/index.html">Chamber Project</a></li>
+            <li><a href="chamber/directory.html">Final Project</a></li>
+        </ul>
+    </nav>
+    <!-- main section -->
+    <main>
+        <h1 id="main-title">Home</h1>
+        <div class="about-container">
+            <section class="about">
+                <h4 class="title">About Me</h4>            
+                <p>My name’s Ngatokoa, but call me Nga. I was born in the Cook Islands and grew up in New Zealand. These days, I work for myself as a freelance graphic designer. My wife and I have four kids who are all grown up now. In my free time, I’m usually watching rugby or finding any excuse to break out the power tools—I’m always up for a good DIY project. This degree is my mid-life crisis. I wanting something new and its really interesting learning code and it hard for me.</p>
+            </section>
+
+            <section class="photo">
+                <h4 class="title">Student photo</h4>
+                <figure >
+                    <img id="student-photo" src="images/nga.webp" alt="nga-hirinuki" width="150" height="150">
+                    <figcaption>Nga Hirinuki</figcaption>
+                </figure>
+            </section>
+        </div>
+        <section id="courses"> 
+            <h4 class="title">Web and Computer Programming Certificate</h4>
+            <div class="course-list">
+                <button id="all"><a href=""><h3>All</h3></a></button>
+                <button id="cse"><a href=""><h3>CSE</h3></a></span>
+                <button id="wdd"><a href=""><h3>WDD</h3></a></span>
+            </div>
+            <div id="credit-info"></div>
+            <div class="course-listing">
+                <button class="wdd-courses"><a href=""><h3>WDD 130</h3></a></button>
+                <button class="wdd-courses"><a href=""><h3>WDD 131</h3></a></button>
+                <button class="wdd-courses"><a href=""><h3>WDD 231</h3></a></button>
+                <button class="cse-courses"><a href=""><h3>CSE 110</h3></a></button>
+                <button class="cse-courses"><a href=""><h3>CSE 111</h3></a></button>
+                <button class="cse-courses"><a href=""><h3>CSE 210</h3></a></button>
+                <div id="course-details"></div>
+            </div>
+        </section>
+
+    </main>
+    <!-- footer section -->
+    <footer>
+        <div class="social">
+            <a href="" m target="_blank"><img src="images/github.svg" alt="github" width="16" height="16"></a>
+            <a href="" m target="_blank"><img src="images/linkedin.svg" alt="linkedin" width="16" height="16"></a>
+            <a href="" m target="_blank"><img src="images/facebook.svg" alt="facebook" width="16" height="16"></a>
+        </div>
+        <div>
+        <p>&copy; <span id="currentyear"></span> Nga Hirinuki <br> Last Modified:<span id="lastModified"></span> </p>
+        </div>
+
+    </footer>
     
 </body>
+
 </html>
