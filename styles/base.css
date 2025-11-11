@@ -53,7 +53,7 @@ header span {
 }
 
 .hamburger.show::before {
-  content: "#00D7";
+  content: "\00D7";
 }
 
 /* ------ Navigation ------------------------------------------------------------ */
