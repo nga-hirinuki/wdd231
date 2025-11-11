@@ -46,16 +46,15 @@ header span {
   border: none;
   cursor: pointer;
   font-size: 2rem;
+  color:#fff;
 }
 
 .hamburger::before {
   content: "\2630";
-  color:#fff;
 }
 
 .hamburger.show::before {
   content: "\00D7";
-  color:#fff;
 }
 
 /* ------ Navigation ------------------------------------------------------------ */
