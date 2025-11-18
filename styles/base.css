@@ -156,9 +156,11 @@ figcaption {
 .course-list h3 {
   margin: 5%;
   padding: 5px 10px;
-  color:#fff;
 }
+#all, #cse, #wdd{
+    color:#fff;
 
+}
 .course-listing {
   display: flex;
   flex-wrap: wrap;
