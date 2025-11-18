@@ -27,7 +27,7 @@
     .about {
         flex: 2;
         background-color: #f8e7c0;
-        height: 90;
+        height: 90px;
     }
     .photo {
         flex: 1;
