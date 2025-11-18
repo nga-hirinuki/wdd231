@@ -1,0 +1,246 @@
+/* ------------------------------- Colour Scheme ------------------------------ */
+/* #B4BEC9 light gray
+/* #159A9C aqua green
+/* #002333 navy blue
+/* #DEEFE7 pastel green
+/* FFFFFF white
+
+
+/* ------------------------------- Site Wide ------------------------------ */
+
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #15a824;
+}
+
+/* ------ Header ----------------------------------------------------------- */
+
+header {
+  display: grid;
+  grid-template-columns: 24px auto 44px;
+  padding: 5px 0 5px 10px;
+  align-items: end;
+  column-gap: 8px;
+  background-color:#002333;
+  color: #fff;
+}
+
+header img {
+  display: block;
+  width: 100%;
+  height: auto;
+  padding-bottom: 5px;
+}
+
+header span {
+  font-size: 1.2rem;
+ 
+}
+
+/* ------ Header -------------------------------------------------------------- */
+
+.hamburger {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 2rem;
+  color:#fff;
+}
+
+.hamburger::before {
+  content: "\2630";
+}
+
+.hamburger.show::before {
+  content: "\00D7";
+}
+
+/* ------ Navigation ------------------------------------------------------------ */
+.navigation {
+  display: none;
+  background-color:#DEEFE7;
+  margin: 0 auto;
+  padding: 0 5px;
+}
+.navigation.show {
+  display: block;
+}
+.navigation ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.navigation a {
+  display: block;
+  padding: .8rem 30px;
+  text-decoration: none;
+  color:#002333;
+}
+.current {
+  background-color:#159A9C;
+}
+.current a {
+  color:#fff;
+}
+.navigation a:hover {
+  background-color: #002333;
+  color:#fff;
+}
+
+/* ------ Main --------------------------------------------------------------------- */
+
+#main-title {  
+  padding: 10px;
+   margin: 0;
+   color:#002333;
+}
+
+/* ------ Sections------------------------*/
+.about-container, #courses {
+  display: block;
+}
+.about-container section, #courses {
+  padding: 10px;
+  margin: 15px;
+  background-color:#DEEFE7;
+  color: #3c4b52;
+}
+.about-container h4, #courses h4 {
+  background-color: #002333;
+  color:#fff;
+  padding: 8px;
+  margin:-10px -10px 10px -10px;
+}
+
+/* ------ text and images ------------------------*/
+p {
+  padding: 0 10px;
+  line-height: 1.5;
+}
+
+#student-photo {
+  display: block;
+  margin: 0 auto;
+  height: auto;
+}
+
+figcaption {
+  text-align: center;
+  padding: 10px 0 0 0;
+}
+
+/* ------ course list ------------------------*/
+.course-list {
+  display: flex;
+  text-align: center;
+  list-style-type: none;
+  gap: 10px;
+  padding: 5px 10px; 
+}
+
+.course-list button {
+  justify-content: center;
+  width: 33%;
+  border-radius: 5px;
+  border: none;
+  background-color:#002333;
+}
+
+.course-list button a {
+  text-decoration: none;
+  color:#fff;
+}
+
+.course-list h3 {
+  margin: 5%;
+  padding: 5px 10px;
+}
+
+.course-listing {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.course-listing button {
+  flex-basis: 100%;
+  margin: 5px 10px;
+  border-radius: 5px;
+  border: none;
+}
+
+.course-listing button a {
+  text-decoration: none;
+}
+
+.course-listing h3 {
+  margin: 10px;
+  color: #fff;
+}
+/* Course Details Section from js */
+.course-card {
+  padding: 20px 10px 0 10px;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  margin: 10px;
+  justify-content: left; 
+  
+  }
+  .course-card h3 {
+    margin-top: 0;
+    color:#002333 
+  }
+  .course-card .completed {
+    font-weight: bold;
+  }
+  .course-card .not-completed {
+    font-weight: bold;
+  }
+  .credit-card {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* ------ Footer ------------------------------------------------------------------- */
+footer {
+  background-color:#002333;
+  padding: 1rem 10px;
+  color:#DEEFE7;
+}
+
+footer p {
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+  column-gap: 8px;
+}
+
+.social a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 22px;
+}
+
+.social img {
+  width: 22px;
+  height: 22px;
+}
+
+.social a:hover {
+  background-color: #ddd;
+}

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Social Tags -->
+    <meta property="og:image" content="images/socialmedia.webp" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://nga-hirinuki.github.io/chamber/index">
+    <meta property="og:title" content="Auckland Chamber of Commerce Homepage">
+    <meta property="og:description" content="Auckland Chamber of Commerce Homepage." />
+    
+    <title>Auckland Chamber of Commerce</title>
+    <meta name="description" content="WDD 231 - Web Frontend Development">
+    <meta name="author" content="nga hirinuki">
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <!-- css files -->
+    <link rel="icon" href="images/akl-icon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <!-- css files main -->
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <!-- css files chamber -->
+    <link rel="stylesheet" href="styles/ch-base.css">
+    <link rel="stylesheet" href="styles/ch-larger.css">
+     <!-- css files business cards -->
+    <link rel="stylesheet" href="styles/bus-base.css">
+    <link rel="stylesheet" href="styles/bus-larger.css">
+    
+    <!-- scripts files -->
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/membersRandom.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
+
+</head>
+<body>
+  <!-- header and nav section -->
+    <header>
+        <img src="images/akl-icon.svg" alt="akl-logo" width="1" height="1">
+        <span>Auckland Chamber of Commerce</span>
+        <button id="ham-btn" class="hamburger" aria-label="navigation"></button>
+    </header>
+    <nav id="nav-bar" class="navigation">
+        <ul>
+            <li ><a href="/index.html">Home</a></li>
+            <li class="current"><a href="chamber/index.html">Chamber Project</a></li>
+            <li><a href="chamber/directory.html">Final Project</a></li>
+        </ul>
+    </nav>
+    <!-- slideshow -->
+    <div class="hero">
+        <h1>Opportunity & <br>Global Reach <br>Focus</h1>
+        <p>Expand your Network<br>Discover Partnerships<br>Elevate your business<br>beyond borders</p>
+        
+    </div>
+    
+    <main>
+        <h1 id="main-title">Home</h1>
+        <!-- Events and Weather section -->
+        <section class="events">
+            <article class="home-container">
+                    <h4 class="titlebar">Events</h4>
+                    <h2>Great Minds Don’t Network Themselves</h2>
+                    <p>Make meaningful business connections that move you forward — one meetup at a time.</p>
+                    <button>Let’s Meet Up</button>
+            </article>
+            <article class="current-weather">
+                    <h4 class="titlebar" >Current Weather</h4>
+                        <img id="graphic" alt="">
+                        <div class="weather-text">
+                            <p id="description"></p>
+                            <p id="temperature"></p>
+                            <p id="humidity"></p>
+                            <p id="high"></p>
+                            <p id="low"></p>
+                            <p id="sunrise"></p>
+                            <p id="sunset"></p>
+                        </div>
+                       
+            </article>
+            <article class="weather-container">
+                    <h4 class="titlebar">Weather</h4>
+                     <p id="todaytemp"></p>
+                        <p id="tomtemp"></p>
+                        <p id="dayaftertemp"></p>
+                    
+            </article>
+
+        </section>
+        
+        <!-- business section -->
+        <div class="menu">
+            <button id="grid">Grid</button>
+            <button id="list">List</button>
+        </div>
+        <div id="card"></div>
+    
+        
+    </main>
+
+    <footer>
+        <div>
+            <p> Auckland Chamber of Commerce <br>127 Universal Drive <br>Henderson, Auckland 0610<br>info@Aklcoc.org<br>(064) 09 628 3244</p>
+            </div>
+            <div class="social">
+                <a href="" m target="_blank"><img src="images/github.svg" alt="github" width="16" height="16"></a>
+                <a href="" m target="_blank"><img src="images/linkedin.svg" alt="linkedin" width="16" height="16"></a>
+                <a href="" m target="_blank"><img src="images/facebook.svg" alt="facebook" width="16" height="16"></a>
+            </div>
+            <div>
+            <p>WDD231 Class Project <br>Nga Hirinuki<br>&copy; <span id="currentyear"></span> Auckland Chamber of Commerce <br> 
+                Web Sources<br> Last Modification:<span id="lastModified"></span> </p>
+            </div>
+    </footer>
+</body>
+</html>

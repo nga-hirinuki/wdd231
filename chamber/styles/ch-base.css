@@ -1,0 +1,121 @@
+/* ------------------------------- Colour Scheme ------------------------------ */
+/* #255a77    #4b83a6    #77a9c5    #c4dde8  pastel Blue */
+/* #3a8589    #6bb7bf    #91ced1    #ceeaea  pastel Light Blue */
+/* #f2c744    #c59b2d    #f7d678    #f8e7c0  pastel yellow */
+/* #cd4627    #f36d3d    #f69678    #f9cabe  pastel orange */
+/* #9e2121    #bf4141    #e07778    #f1c0c2  pastel red */
+
+/* ------------------------------- main ------------------------------ */
+
+#main-title {  
+  margin: 10px 10px -10px 10px;
+}
+.home-container, .weather-container, .current-weather {
+  margin:  10px;
+  background-color: #ceeaea;
+  overflow: hidden;
+  
+}
+.current-weather  {
+  display: flex;
+  flex-wrap: wrap;
+}
+.current-weather h4 {
+  flex: 1 100%;
+  width: 100%;
+  margin: 0;
+}
+.weather-text {
+   width: 150px;
+  padding: 10px 0 20px 50px;
+  justify-content: flex-end;
+  
+}
+.weather-text p{
+  justify-items: end;
+  margin-bottom: -15px;
+}
+.current-weather #graphic {
+  width: 100px;
+  height: 100px;
+  margin-left: 70px;
+}
+.weather-container  {
+  text-align: center;
+  padding-bottom: 20px;
+}
+.weather-container  p{
+  text-align: center;
+  margin-bottom: -15px;
+}
+
+
+.home-container *,  .home-container h4:not(.titlebar) {
+  padding: 10px;
+}
+.home-container h2 {
+  margin-top: 5px;
+  font-size: 1.5rem;
+  margin: 0;
+  text-align: left;
+}
+.home-container p {
+  font-size: 1.1rem;
+  margin-top: -10px;
+}
+.titlebar {
+  margin: 0;
+  padding: 10px;
+  color: #fff;
+  background-color: #255a77;
+  text-align: left;
+}
+.home-container button {
+  display: block;
+  background-color: #255a77;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  margin: 10px 10px 15px 10px;  
+  border: none;
+}
+.home-container button:hover {
+  background-color: #3a8589 ;
+  cursor: pointer;
+}
+
+
+/* Optional: Style the <img> inside hero (if you keep it) */
+.hero {
+    display: block;
+  width: 100%;              /* make it responsive */
+  max-width: 900px;         /* limit size on large screens */
+  height: 300px;
+  background-image: url('../images/hero-sml.webp'); /* default: mobile */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  overflow: hidden;
+  margin: 0 auto;
+  background-color: #c4dde8;
+
+    }
+    .hero h1 {
+    flex: 1 95%;
+    color: #9e2121;
+    font-size: 2.5rem;
+    text-align: center;
+    justify-content: center;
+    
+    
+    }
+    .hero p {
+    margin: 0 auto;  
+    color:#103a51;
+    font-size: 1.2rem;
+    text-align: right;
+    width: 420px;
+   
+    
+    }
+

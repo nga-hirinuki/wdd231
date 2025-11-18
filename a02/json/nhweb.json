@@ -1,0 +1,42 @@
+"<!DOCTYPE html>"
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Social Tags -->
+    <meta property="og:image" content="images/socialmedia.webp" />
+    <meta property="og:url" content="https://nga-hirinuki.github.io/wdd231/">
+    <meta property="og:title" content="Nga Hirinuki - WDD 231 - Web Frontend Development">
+    <meta property="og:description" content="Web & Computer Programming Certificate that equips you with coding, web design, and software development skills for building efficient, user-friendly digital solutions." />
+    
+    <title>Nga Hirinuki - WDD 231 - Course Homepage</title>
+    <meta name="description" content="WDD 231 - Web Frontend Development">
+    <meta name="author" content="nga hirinuki">
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <!-- css files -->
+     <link rel="icon" href="images/nh.ico" type="image/x-icon">
+     <!-- css files -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <!-- scripts files -->
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+    <script src="" defer></script>
+
+</head>
+<body>
+<header>
+</header>
+<nav>
+</nav>
+<main>
+</main>
+<footer>
+</footer>
+</body>
+</html>

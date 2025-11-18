@@ -1,0 +1,41 @@
+{
+    "family_name": "Hirinuki",
+    "move_in_date": "2025-11-11",
+    "number_of_members": 6,
+    "visited_by_Bishopric": true,
+    "family_members": [
+        {
+            "first_name": "Nga",
+            "gender": "male",
+            "birthdate": "1984-05-10"
+        },
+        {
+            "first_name": "Sandra",
+            "gender": "female",
+            "birthdate": "1982-04-23"
+        },
+        {
+            "first_name": "Nga jr",
+            "gender": "male",
+            "birthdate": "2001-07-16"
+        },
+        
+         {
+            "first_name": "Arianna",
+            "gender": "female",
+            "birthdate": "2003-02-14"
+        },
+        
+         {
+            "first_name": "Shaianne",
+            "gender": "female",
+            "birthdate": "2005-06-11"
+        },
+        
+         {
+            "first_name": "Ezra",
+            "gender": "male",
+            "birthdate": "2010-07-23"
+        }       
+    ]
+}
