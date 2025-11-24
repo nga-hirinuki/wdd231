@@ -49,7 +49,7 @@
     .hero {
     width: 900px; /* adjust as needed */
     height: 300px; /* adjust as needed */
-    background-image: url('../images/hero-function.webp');
+    background-image: url('../images/home-hero.webp');
     }
     .hero h1 {
     display: block;
