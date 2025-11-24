@@ -91,7 +91,7 @@
   width: 100%;              /* make it responsive */
   max-width: 900px;         /* limit size on large screens */
   height: 300px;
-  background-image: url('../images/hero-sml.webp'); /* default: mobile */
+  background-image: url('../images/home-hero-sml.webp'); /* default: mobile */
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
