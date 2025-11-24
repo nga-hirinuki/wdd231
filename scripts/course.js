@@ -167,7 +167,7 @@ function highlightCompletedCourses() {
     const course = courses.find(c => c.subject === subject && c.number == number);
     if (course && course.completed) {
       btn.style.backgroundColor = "#159A9C"; // green
-      btn.style.color = "#002333";
+      btn.style.color = "";
     } else {
       btn.style.backgroundColor = "#5e131e"; // reset to default
       btn.style.color = "";

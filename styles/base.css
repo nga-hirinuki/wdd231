@@ -132,6 +132,7 @@ figcaption {
 }
 
 /* ------ course list ------------------------*/
+
 .course-list {
   display: flex;
   text-align: center;
@@ -146,42 +147,33 @@ figcaption {
   border-radius: 5px;
   border: none;
   background-color:#002333;
+  padding: 10px;
 }
 
-.course-list button a {
-  text-decoration: none;
-  color:#fff;
-}
-
-.course-list h3 {
-  margin: 5%;
-  padding: 5px 10px;
-}
 #all, #cse, #wdd{
     color:#fff;
-
+    width: 262px;
 }
 .course-listing {
   display: flex;
-  flex-wrap: wrap;
-  text-align: center;
-  padding-bottom: 10px;
+  flex-wrap: wrap;  
+  margin: 7px;
+  color: #fff;
 }
 
 .course-listing button {
   flex-basis: 100%;
-  margin: 5px 10px;
+  margin: 5px;
   border-radius: 5px;
   border: none;
-}
-
-.course-listing button a {
-  text-decoration: none;
-}
-
-.course-listing h3 {
-  margin: 10px;
   color: #fff;
+  padding: 10px 0 ;
+  justify-content:center
+}
+
+#course-details {
+  margin: 10px;
+  color: #002333;
 }
 /* Course Details Section from js */
 .course-card {
@@ -191,7 +183,6 @@ figcaption {
   border-radius: 10px;
   margin: 10px;
   justify-content: left; 
-  
   }
   .course-card h3 {
     margin-top: 0;
