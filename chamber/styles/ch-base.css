@@ -33,18 +33,22 @@
   overflow: hidden;
   margin: 0 auto;
   }
+  
   #h1-chamber{
   color:#ffffff;
   font-size:2rem;
   text-align: right;
-  margin: 50px 30px 10px;
+  margin: 50px 30px 20px;
   }
+
   #but-chamber{
-    padding: 10px 25px;
-    margin: 0 30px;
+    padding: 10px 30px;
+    margin:  30px;
     border-radius: 7px;
     border:none;
     background-color:#9c1581;   
+    text-decoration: none;
+    color: #fff;
   }
   #but-chamber a, #but-article a{
     text-decoration: none;
@@ -63,16 +67,18 @@ article {
 .home-container {
   background-color: #9c1581;
 }
-.home-container h2, p{
+.home-container h2, .home-container p{
   color: #fff;
+  padding: 10px 15px ;
 }
 #but-article{
-  background-color: #ffffff;
+  background-color:#fff;
   color: #9c1581;
-}
-#but-article {
-  color: #9c1581;
- 
+  padding: 10px 20px;
+  margin: 17px;
+  text-decoration: none;
+  border-radius: 7px;
+
 }
 
 #weather-box  {
@@ -99,7 +105,7 @@ article {
   justify-items: center;
   padding-top: 30px;
 }
-.weather-container  p{
+.weather-container p{
   text-align: left;
   font-size: 1.4rem;
     color: #002333;
