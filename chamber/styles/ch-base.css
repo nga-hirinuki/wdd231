@@ -32,10 +32,9 @@
   background-position: center;
   overflow: hidden;
   margin: 0 auto;
-  
   }
   
-  #h1-chamber{
+  .hero h1{
   color:#ffffff;
   font-size:2rem;
   text-align: right;
@@ -43,7 +42,7 @@
   }
 
   #but-chamber{
-    padding: 10px 30px;
+    padding: 10px 40px;
     margin:  30px;
     border-radius: 7px;
     border:none;
@@ -51,7 +50,7 @@
     text-decoration: none;
     color: #fff;
   }
-  #but-chamber a, #but-article a{
+  #but-article a{
     text-decoration: none;
     color: #fff;
   }
@@ -64,7 +63,6 @@ article {
   overflow: hidden;
   color: #002333;
 }
-
 .home-container {
   background-color: #9c1581;
 }
@@ -72,14 +70,13 @@ article {
   color: #fff;
   padding: 10px 15px ;
 }
-#but-article{
+#button{
   background-color:#fff;
   color: #9c1581;
-  padding: 10px 20px;
+  padding: 10px 30px;
   margin: 17px;
   text-decoration: none;
   border-radius: 7px;
-
 }
 
 #weather-box  {
@@ -149,7 +146,7 @@ article {
   background-color: #3a8589 ;
   cursor: pointer;
 }
-
+/* -- weather ------------------------------ */
  footer {
  display: flex;
  padding: 10px;
@@ -157,3 +154,93 @@ article {
   footer p, .social{
   flex: 1;
 }
+
+
+/* ------------------------------- Business directory ------------------------------ */
+
+/* -- global styles ------------------------ */
+
+#card{
+  padding: 10px; 
+} /* -- buscard section --*/
+
+.member-card {
+  border: 1px solid #ddd;
+  padding: 1rem;
+  margin: 0 5px 10px;
+  display: flex;
+  align-items: center;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}/* -- business border --*/
+
+.member-card:hover {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  transform: translateY(-3px);
+}/* -- business border glow --*/
+
+.menu{
+  justify-self:center;
+  }/* -- gridlist buttons --*/
+
+.menu button {
+  background-color: #002333;
+  color: white;
+  padding: 8px 40px;
+  border-radius: 8px;
+  margin: 10px 10px 15px 10px;  
+  border: none;
+}/* -- buttons --*/
+
+.member-card h2 {
+  font-size: 1.25rem;
+  margin: 0.5rem 0 0.25rem 0;
+  color: #002333;
+} /* -- business name --*/
+
+.member-card p {
+  margin: 0.25rem .5rem;
+  font-size: 0.95rem;
+  color: #555;
+  text-align: center;
+}/* -- business membership and address --*/
+
+.member-card .membership {
+  font-weight: 600;
+  text-transform: capitalize;
+  color: #b88a00;
+}/* -- business membership --*/
+
+.member-card a {
+  color: #0066cc;
+  text-decoration: none;
+}/* -- weblink --*/
+
+/* -- Grid view toggle ------------------------ */
+
+.grid-view {
+  display: grid !important;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 10px;
+}/* -- grid section --*/
+
+.grid-view .member-card {
+  flex-direction: column;
+  text-align: center;
+}/* -- grid flow --*/
+
+/* -- list view toggle ------------------------ */
+
+.list-view {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.list-view .member-card img {
+  display: none;
+} /* -- list image --*/
+
+.list-view .member-card h2,
+.list-view .member-card p {
+  text-align: left;   
+} /* -- list text --*/

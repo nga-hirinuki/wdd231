@@ -1,34 +1,43 @@
 @media only screen and (min-width: 38rem) {
 
+    /* ------------------------------- nav ----------------------------- */
     header {
         grid-template-columns: 24px auto ; 
     }
+    /* ------------------------------- hero ---------------------------- */
+    #h1-chamber{
+    font-size:3rem;
+    text-align: right;  
+    margin-top: 50px
+    }
+    .hero {
+    width: 900px; /* adjust as needed */
+    height: 260px; /* adjust as needed */
+    background-image: url('../images/home-hero.webp');
+    }
+    .hero h1 {
+    text-align: right;
+    padding-left: 550px;
+    font-size:3rem;
+    }
+
+    #main-title {  
+    margin: 10px 10px -10px 10px;
+    }
+    /* ------------------------------- sections ------------------------ */
+    #main-title, .home-container, .current-weather, .weather-container, .titlebar {
+        margin: 0;
+    }
+    /* -----article events ----------------- */
     .events {
         display: grid;
         grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr 1fr;
         gap: 1rem;
     }
-
-    .hero {
-    text-align: right;
-    }
-    #h1-chamber{
-    color:#ffffff;
-    font-size:3rem;
-    text-align: right;  
-    margin-top: 50px
-    }
-    #main-title {  
-    margin: 10px 10px -10px 10px;
-    }
-    
-    #main-title, .home-container, .current-weather, .weather-container, .titlebar {
-        margin: 0;
-    }
- 
     .home-container {
         grid-column:1/4;
     }
+    /* -----article current weather -------- */
     .current-weather {
         grid-column:4/6;
         background-color:#B4BEC9;
@@ -38,7 +47,6 @@
        margin: 0  ;
        height: 8%;
     }
-
     .current-weather #graphic {
     margin: 0;
     }
@@ -52,35 +60,51 @@
         font-size:small
     
     }
-   
+    /* -----article weather container------- */
     .weather-container {
         grid-column: 6/ 8;
         background-color:#B4BEC9;
     }
-
     .weather-container #todaytemp {
        margin-top: 10px;
     }
-
-    .hero {
-    width: 900px; /* adjust as needed */
-    height: 260px; /* adjust as needed */
-    background-image: url('../images/home-hero.webp');
-    }
-    .hero h1 {
-    display: block;
-    color: #9e2121;
-    font-size: 3rem;
-    text-align: right;
-    margin: 15px;
-    padding-left: 550px;
     
-    }
-    .hero p {
-    display: block;
-    color:#103a51;
-    font-size: 1.2rem;
-    text-align: right;
-    width:auto
-    }
+    
+    /* ------------------------------- footer -------------------------- */
+
+
+   /* -- busines directory list view ------------------------ */
+.list-view *.member-card {
+    flex-direction: row;
+    text-align: center;
+  }
+
+.list-view .member-card img {
+  width: 100px;
+  height: 100px;
+  display: block;
+  margin-right:20px;
+}
+.list-view .member-card h2,
+.list-view .member-card p {
+  text-align: left;
+  padding: 0 20px;
+}
+
+   
+    
+
+   
+
+    
+    
+    
+ 
+    
+    
+    
+   
+    
+
+  
 }
