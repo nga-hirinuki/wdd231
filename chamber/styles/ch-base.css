@@ -155,7 +155,6 @@ article {
   flex: 1;
 }
 
-
 /* ------------------------------- Business directory ------------------------------ */
 
 /* -- global styles ------------------------ */
@@ -165,7 +164,7 @@ article {
 } /* -- buscard section --*/
 
 .member-card img{
-  padding-right:10px;
+  margin-right:20px;
 }/* -- default img --*/
 
 .member-card {
