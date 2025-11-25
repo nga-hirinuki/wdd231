@@ -9,6 +9,10 @@ const displayMembers = (membersArray) => {
         const card = document.createElement('section');
         card.classList.add('member-card', 'list'); // default to list layout
 
+        // Name
+        const fullName = document.createElement('h2');
+        fullName.textContent = member.name;
+
         // Image
         const portrait = document.createElement('img');
         portrait.src = member.imageUrl;
@@ -18,10 +22,6 @@ const displayMembers = (membersArray) => {
         const membership = document.createElement('p');
         membership.textContent = member.membership_level;
         membership.classList.add('membership');
-
-        // Name
-        const fullName = document.createElement('h2');
-        fullName.textContent = member.name;
 
         // Other info
         const info = document.createElement('p');

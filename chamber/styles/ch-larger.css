@@ -8,6 +8,20 @@
         grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr 1fr;
         gap: 1rem;
     }
+
+    .hero {
+    text-align: right;
+    }
+    #h1-chamber{
+    color:#ffffff;
+    font-size:3rem;
+    text-align: right;  
+    margin-top: 50px
+    }
+    #main-title {  
+    margin: 10px 10px -10px 10px;
+    }
+    
     #main-title, .home-container, .current-weather, .weather-container, .titlebar {
         margin: 0;
     }

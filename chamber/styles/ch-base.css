@@ -1,54 +1,111 @@
 /* ------------------------------- Colour Scheme ------------------------------ */
-/* #255a77    #4b83a6    #77a9c5    #c4dde8  pastel Blue */
-/* #3a8589    #6bb7bf    #91ced1    #ceeaea  pastel Light Blue */
-/* #f2c744    #c59b2d    #f7d678    #f8e7c0  pastel yellow */
-/* #cd4627    #f36d3d    #f69678    #f9cabe  pastel orange */
-/* #9e2121    #bf4141    #e07778    #f1c0c2  pastel red */
+/* #B4BEC9 light gray
+/* #159A9C aqua green
+/* #002333 navy blue
+/* #DEEFE7 pastel green
+/* FFFFFF white
 
 /* ------------------------------- main ------------------------------ */
 
-#main-title {  
-  margin: 10px 10px -10px 10px;
+/* -------------------------------nav ------------------------------ */
+
+#nav-chamber {
+  background-color: #002333;
 }
-.home-container, .weather-container, .current-weather {
-  margin:  10px;
-  background-color: #ceeaea;
+#nav-chamber a {
+  color:#ffffff;
+}
+#nav-chamber .current {
+  background-color:#9c1581;
+}
+/* ------------------------------- hero ------------------------------ */
+
+.hero {
+  text-align: right;
+  display: block;
+  width: 100%;              /* make it responsive */
+  min-width: 500px;         /* limit size on large screens */
+  height: 200px;
+  background-image: url('../images/home-hero-sml.webp'); /* default: mobile */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   overflow: hidden;
-  
+  margin: 0 auto;
+  }
+  #h1-chamber{
+  color:#ffffff;
+  font-size:2rem;
+  text-align: right;
+  margin: 50px 30px 10px;
+  }
+  #but-chamber{
+    padding: 10px 25px;
+    margin: 0 30px;
+    border-radius: 7px;
+    border:none;
+    background-color:#9c1581;   
+  }
+  #but-chamber a, #but-article a{
+    text-decoration: none;
+    color: #fff;
+  }
+
+  /* ------------------------------- sections ------------------------------ */
+
+article {
+  margin:  10px;
+  background-color: #e6f1f1;
+  overflow: hidden;
+  color: #002333;
 }
-.current-weather  {
+
+.home-container {
+  background-color: #9c1581;
+}
+.home-container h2, p{
+  color: #fff;
+}
+#but-article{
+  background-color: #ffffff;
+  color: #9c1581;
+}
+#but-article a {
+  color: #9c1581;
+}
+
+#weather-box  {
   display: flex;
-  flex-wrap: wrap;
+  margin-top: 25px;
 }
-.current-weather h4 {
-  flex: 1 100%;
-  width: 100%;
-  margin: 0;
-}
+
 .weather-text {
-   width: 150px;
-  padding: 10px 0 20px 50px;
-  justify-content: flex-end;
-  
+  vertical-align: top;;
 }
 .weather-text p{
-  justify-items: end;
-  margin-bottom: -15px;
+  color: #002333;
 }
-.current-weather #graphic {
-  width: 100px;
-  height: 100px;
-  margin-left: 70px;
+#graphic {
+  margin-top: 0;
+  width: 110px;
+  height: 110px;  
 }
 .weather-container  {
   text-align: center;
   padding-bottom: 20px;
 }
+#weather-conbox {
+  justify-items: center;
+  padding-top: 30px;
+}
 .weather-container  p{
-  text-align: center;
-  margin-bottom: -15px;
+  text-align: left;
+  font-size: 1.4rem;
+    color: #002333;
+    margin: 10px;
 }
 
+/* -- weather ------------------------------ */
 
 .home-container *,  .home-container h4:not(.titlebar) {
   padding: 10px;
@@ -67,12 +124,13 @@
   margin: 0;
   padding: 10px;
   color: #fff;
-  background-color: #255a77;
+  background-color: #002333;
   text-align: left;
+  
 }
 .home-container button {
   display: block;
-  background-color: #255a77;
+  background-color:#9c1581;
   color: white;
   padding: 10px 20px;
   border-radius: 8px;
@@ -85,37 +143,5 @@
 }
 
 
-/* Optional: Style the <img> inside hero (if you keep it) */
-.hero {
-    display: block;
-  width: 100%;              /* make it responsive */
-  max-width: 900px;         /* limit size on large screens */
-  height: 300px;
-  background-image: url('../images/home-hero-sml.webp'); /* default: mobile */
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  overflow: hidden;
-  margin: 0 auto;
-  background-color: #c4dde8;
 
-    }
-    .hero h1 {
-    flex: 1 95%;
-    color: #9e2121;
-    font-size: 2.5rem;
-    text-align: center;
-    justify-content: center;
-    
-    
-    }
-    .hero p {
-    margin: 0 auto;  
-    color:#103a51;
-    font-size: 1.2rem;
-    text-align: right;
-    width: 420px;
-   
-    
-    }
 

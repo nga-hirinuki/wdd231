@@ -30,7 +30,6 @@ async function apiFetch() {
             const data = await response.json();
             console.log(data);
             displayResults(data);
-
         } else {
             throw Error(await response.text());
         }
@@ -43,7 +42,7 @@ async function apiFetch() {
         // myTown.innerHTML = data.name
         mydescription.innerHTML = data.weather[0].description
         myTemperature.innerHTML = `${data.main.temp} &deg;C`
-        const iconsrc = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`
+        const iconsrc = `https://openweathermap.org/img/wn/${data.weather[0].icon}@4x.png`
         myGraphic.setAttribute('src', iconsrc);
         myGraphic.setAttribute('alt', data.weather[0].description);
         myhumidity.innerHTML = `Humidity: ${data.main.humidity}%`

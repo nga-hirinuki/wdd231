@@ -1,9 +1,9 @@
 /* ------------------------------- Colour Scheme ------------------------------ */
-/* #255a77    #4b83a6    #77a9c5    #c4dde8  pastel Blue */
-/* #3a8589    #6bb7bf    #91ced1    #ceeaea  pastel Light Blue */
-/* #f2c744    #c59b2d    #f7d678    #f8e7c0  pastel yellow */
-/* #cd4627    #f36d3d    #f69678    #f9cabe  pastel orange */
-/* #9e2121    #bf4141    #e07778    #f1c0c2  pastel red */
+/* #B4BEC9 light gray
+/* #159A9C aqua green
+/* #002333 navy blue
+/* #DEEFE7 pastel green
+/* FFFFFF white
 
 /* ------------------------------- Site Wide ------------------------------ */
 
@@ -19,11 +19,11 @@
     <!-- more cards... -->
   </div> */
 
-
-
+#card{
+  margin: 10px 0 15px;
+}
 
 .menu{
-        grid-column:1/-1;
         justify-self:center
     }
 
@@ -36,22 +36,17 @@
     border: none;
 }
 /* ====== GENERAL STYLES ====== */
-#card {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  margin: 1.5rem 10px;
- 
-}
+
 /* ------grid format----------- */
 .member-card {
   background-color: #ffffff;
   border: 1px solid #ddd;
   padding: 1rem;
+  margin: 0 5px 10px;
   display: flex;
-  flex-direction: column;
   align-items: center;
   transition: box-shadow 0.3s ease, transform 0.3s ease;
+
 }
 
 .member-card:hover {
@@ -75,7 +70,7 @@
 }
 
 .member-card p {
-  margin: 0.25rem 0;
+  margin: 0.25rem .5rem;
   font-size: 0.95rem;
   color: #555;
   text-align: center;
