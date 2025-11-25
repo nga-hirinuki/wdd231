@@ -164,6 +164,10 @@ article {
   padding: 10px; 
 } /* -- buscard section --*/
 
+.member-card img{
+  padding-right:10px;
+}/* -- default img --*/
+
 .member-card {
   border: 1px solid #ddd;
   padding: 1rem;
@@ -238,9 +242,11 @@ article {
 
 .list-view .member-card img {
   display: none;
+ 
 } /* -- list image --*/
 
 .list-view .member-card h2,
 .list-view .member-card p {
   text-align: left;   
+   
 } /* -- list text --*/
