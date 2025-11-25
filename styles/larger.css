@@ -23,6 +23,8 @@
         display: flex;
     }
 
+   
+
     /* ------ about section ------------------------*/
     .about {
         flex: 2;
@@ -45,5 +47,7 @@
       flex-wrap: wrap;
       max-width: 31.5%;   
       }
+    
+   
 
 }
