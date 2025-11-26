@@ -8,21 +8,30 @@
     #h1-chamber{
     font-size:3rem;
     text-align: right;  
-    margin-top: 50px
+    margin-top: 50px;
     }
+
     .hero {
-    width: 900px; /* adjust as needed */
-    height: 260px; /* adjust as needed */
-    background-image: url('../images/home-hero.webp');
+    width: 900px;
+    height: 260px;
+    }
+
+   .hero img{
+    position: relative;
+    margin-top: -178px;
+    z-index: -1;
     }
     .hero h1 {
     text-align: right;
-    padding-left: 550px;
-    font-size:3rem;
+    font-size:4rem;
+    margin-right: 30px;
+    
     }
-
+    main{
+        margin-top: -40px;
+    }
     #main-title {  
-    margin: 10px 10px -10px 10px;
+    margin-top: 0px ;
     }
     /* ------------------------------- sections ------------------------ */
     #main-title, .home-container, .current-weather, .weather-container, .titlebar {
@@ -74,6 +83,11 @@
 
 
    /* -- busines directory list view ------------------------ */
+.member-card img{
+  
+  display: block;
+}/* -- default img --*/
+
 .list-view *.member-card {
     flex-direction: row;
     text-align: center;
