@@ -196,6 +196,9 @@ article {
   margin: 70px 10px 15px 10px;  
   border: none;
 }/* -- buttons --*/
+#menu-index {
+  margin: -50px 10px 15px 10px;  
+}/* -- buttons --*/
 
 .member-card h2 {
   font-size: 1.25rem;
