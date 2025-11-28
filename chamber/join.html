@@ -5,19 +5,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Social Tags -->
-    <meta property="og:image" content="images/socialmedia.webp" />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://nga-hirinuki.github.io/chamber/index">
-    <meta property="og:title" content="Auckland Chamber of Commerce Homepage">
-    <meta property="og:description" content="Auckland Chamber of Commerce Homepage." />
+     <meta property="og:image" content="https://nga-hirinuki.github.io/wdd231/chamber/images/akl-chamber.webp">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://nga-hirinuki.github.io/wdd231/chamber/index.html">
+    <meta property="og:title" content="Auckland Chamber of Commerce">
+    <meta property="og:description" content="A business group that helps Auckland companies connect, grow, learn, share ideas, find support, meet others, solve problems, and succeed together.">
     
     <title>Auckland Chamber of Commerce</title>
     <meta name="description" content="WDD 231 - Web Frontend Development">
     <meta name="author" content="nga hirinuki">
+    
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>    
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+    as="style" onload="this.rel='stylesheet'">
+   
     
     <!-- favicon -->
     <link rel="icon" href="images/akl-icon.ico" type="image/x-icon">
@@ -30,9 +33,7 @@
     <!-- css chamber -->
     <link rel="stylesheet" href="styles/ch-base.css">
     <link rel="stylesheet" href="styles/ch-larger.css">
-     <!-- css bus-cards -->
-    <link rel="stylesheet" href="styles/bus-base.css">
-    <link rel="stylesheet" href="styles/bus-larger.css">
+ 
     
     <!-- scripts files -->
     <script src="scripts/navigation.js" defer></script>
@@ -44,67 +45,73 @@
 <body>
   <!-- header and nav section -->
     <header>
-        <img src="images/akl-icon.svg" alt="akl-logo" width="1" height="1">
+        <img src="images/akl-icon.svg" alt="akl-logo" width="1" height="1" loading="lazy">
         <span>Auckland Chamber of Commerce</span>
         <button id="ham-btn" class="hamburger" aria-label="navigation"></button>
     </header>
-     <nav id="nav-bar" class="navigation">
+
+<!-- navigation -->
+
+    <nav id="nav-bar" class="navigation" >
         <ul>
-            <li ><a href="index.html">Home</a></li>
+            <li ><a href="../index.html">Home</a></li>
             <li class="current"><a href="chamber/index.html">Chamber Project</a></li>
-            <li><a href="chamber/directory.html">Final Project</a></li>
+            <li><a href="../project/index.html">Final Project</a></li>
         </ul>
     </nav>
-     <nav class="navigation"  id="nav-chamber">
+     <nav class="navigation" id="nav-chamber">
         <ul>
-            <li><a href="../chamber/index.html">Home</a></li>
+            <li><a href="../chamber/chamber.html">Home</a></li>
             <li><a href="../chamber/discover.html">Discover</a></li>
             <li><a href="../chamber/directory.html">Directory</a></li>
             <li class="current"><a href="../chamber/join.html">Join</a></li>
         </ul>
     </nav>
-    <!-- slideshow -->
+<!-- hero image -->
     <div class="hero">
-        
-        
+        <h1>Discover Auckland!</h1>
+        <a href="../chamber/discover.html"  id="but-chamber">Check it out</a>
+        <img src="images/home-hero.webp" srcset=" images/home-hero-sml.webp 500w, images/home-hero.webp 900w" sizes="100vw" width="900" height="260"   alt="View of Auckland city from the sea" loading="lazy"/>
     </div>
     
     <main>
-        <h1 id="main-title">Home</h1>
-        <!-- Events and Weather section -->
+        <h1 id="main-title">Welcome</h1>
+<!-- Section events -->
         <section class="events">
             <article class="home-container">
                     <h4 class="titlebar">Events</h4>
                     <h2>Great Minds Don’t Network Themselves</h2>
                     <p>Make meaningful business connections that move you forward — one meetup at a time.</p>
-                    <button>Let’s Meet Up</button>
+                    <a id="button" href="../chamber/discover.html">Let’s Meet Up</a>
             </article>
             <article class="current-weather">
                     <h4 class="titlebar" >Current Weather</h4>
-                        <img id="graphic" alt="">
-                        <div class="weather-text">
-                            <p id="description"></p>
-                            <p id="temperature"></p>
-                            <p id="humidity"></p>
-                            <p id="high"></p>
-                            <p id="low"></p>
-                            <p id="sunrise"></p>
-                            <p id="sunset"></p>
-                        </div>
-                       
+                        <div id="weather-box">
+                            <img id="graphic" alt="weather-icon">
+                            <div class="weather-text">
+                                <p id="description"></p>
+                                <p id="temperature"></p>
+                                <p id="humidity"></p>
+                                <p id="high"></p>
+                                <p id="low"></p>
+                                <p id="sunrise"></p>
+                                <p id="sunset"></p>
+                            </div>
+                        </div>         
             </article>
             <article class="weather-container">
                     <h4 class="titlebar">Weather</h4>
-                     <p id="todaytemp"></p>
+                    <div id="weather-conbox">
+                        <p id="todaytemp"></p>
                         <p id="tomtemp"></p>
                         <p id="dayaftertemp"></p>
-                    
+                    </div>
             </article>
 
         </section>
         
         <!-- business section -->
-        <div class="menu">
+        <div class="menu" id="menu-index">
             <button id="grid">Grid</button>
             <button id="list">List</button>
         </div>
@@ -118,9 +125,8 @@
             <p> Auckland Chamber of Commerce <br>127 Universal Drive <br>Henderson, Auckland 0610<br>info@Aklcoc.org<br>(064) 09 628 3244</p>
             </div>
             <div class="social">
-                <a href="" m target="_blank"><img src="images/github.svg" alt="github" width="16" height="16"></a>
-                <a href="" m target="_blank"><img src="images/linkedin.svg" alt="linkedin" width="16" height="16"></a>
-                <a href="" m target="_blank"><img src="images/facebook.svg" alt="facebook" width="16" height="16"></a>
+                 <a href="https://nga-hirinuki.github.io/wdd231/" target="_blank"><img src="images/github.svg" alt="github" width="16" height="16"></a>
+                <a href="https://www.linkedin.com/in/nga-hirinuki-04177658/" target="_blank"><img src="images/linkedin.svg" alt="linkedin" width="16" height="16"></a>
             </div>
             <div>
             <p>WDD231 Class Project <br>Nga Hirinuki<br>&copy; <span id="currentyear"></span> Auckland Chamber of Commerce <br> 

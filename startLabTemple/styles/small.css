@@ -1,0 +1,25 @@
+*{box-sizing: border-box;}
+
+
+ #mydialog{
+    border-radius: 7px;
+    border: none;
+    display: grid;
+    grid-template-rows: 100px 100px;
+    padding: 0;
+}
+
+#mydialog div{
+   background-color: rgb(151, 199, 240);
+    padding:  20px ;
+    display: grid;
+    grid-template-columns: 5fr 1fr;
+}
+#mydialog button{
+    background-color: aquamarine;
+}
+
+#mydialog p{
+    background-color: #fff;
+    padding: 5px 10px;
+} 

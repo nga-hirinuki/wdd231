@@ -1,0 +1,14 @@
+*{box-sizing: border-box;}
+
+#openButton {background-color: aqua;}
+#dialogBox {
+    background-color: purple;
+    width: 500px;
+    height: 700px;
+    
+}
+#closeBox {background-color: violet;}
+
+::backdrop {
+    background-color: rgb(255,128,0,0.5);
+}
