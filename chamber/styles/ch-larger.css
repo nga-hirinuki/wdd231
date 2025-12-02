@@ -89,6 +89,7 @@
     }/* -- buttons --*/
 
      /* -----Join page Events ----------------- */
+     
     .join-events {
         display: grid;
         grid-template-columns:1fr 1fr 1fr 1fr ;
