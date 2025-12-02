@@ -1,0 +1,44 @@
+
+/* ------------------------------- Colour Scheme ------------------------------ */
+/* #B4BEC9 light gray
+/* #159A9C aqua green
+/* #002333 navy blue
+/* #DEEFE7 pastel green
+/* FFFFFF white*/
+
+fieldset{
+    margin-top: 20px;
+    margin-bottom: 0;
+    border-radius: 6px;
+    }
+
+form{
+    background-color: #DEEFE7;
+    padding: 20px 20px 30px;
+
+    }
+
+label, input, select {
+    display: block;
+    padding: 10px;
+   
+}
+input, select {
+    width: 88%;
+}
+textarea {
+    width: 92%;
+}
+
+input, select , textarea {
+    margin-left: 10px;
+}
+
+input[type=submit] {
+ margin-top: 20px;
+ background-color: #159A9C ;
+ color: #fff;
+ border: none;
+ border-radius: 7px;
+ width: 93%;
+}

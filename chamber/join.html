@@ -18,7 +18,7 @@
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>    
-    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+    <link rel="preload" href="font-family: Montserrat, Helvetica, sans-serif;"
     as="style" onload="this.rel='stylesheet'">
    
     
@@ -33,6 +33,7 @@
     <!-- css chamber -->
     <link rel="stylesheet" href="styles/ch-base.css">
     <link rel="stylesheet" href="styles/ch-larger.css">
+    <link rel="stylesheet" href="styles/form.css">
  
     
     <!-- scripts files -->
@@ -40,6 +41,9 @@
     <script src="scripts/getdates.js" defer></script>
     <script src="scripts/membersRandom.js" defer></script>
     <script src="scripts/weather.js" defer></script>
+    <script src="scripts/form.js" defer></script>
+
+    <script type="module" src="scripts/join-but.js" defer></script>
 
 </head>
 <body>
@@ -55,7 +59,7 @@
     <nav id="nav-bar" class="navigation" >
         <ul>
             <li ><a href="../index.html">Home</a></li>
-            <li class="current"><a href="chamber/index.html">Chamber Project</a></li>
+            <li class="current"><a href="chamber/chamber.html">Chamber Project</a></li>
             <li><a href="../project/index.html">Final Project</a></li>
         </ul>
     </nav>
@@ -71,51 +75,98 @@
     <div class="hero">
         <h1>Discover Auckland!</h1>
         <a href="../chamber/discover.html"  id="but-chamber">Check it out</a>
-        <img src="images/home-hero.webp" srcset=" images/home-hero-sml.webp 500w, images/home-hero.webp 900w" sizes="100vw" width="900" height="260"   alt="View of Auckland city from the sea" loading="lazy"/>
+        <picture>
+                <source media="(min-width: 900px)" srcset="/chamber/images/join-hero.webp" loading="lazy">
+                <source media="(max-width: 500px)" srcset="/chamber/images/join-hero-sml.webp" loading="lazy">
+                <img src="/chamber/images/join-hero.webp" alt="People at a business Convention" loading="lazy">
+        </picture>
+        <!-- <img src="images/join-hero-sml.webp" srcset="images/join-hero-sml.webp 500w, images/join-hero.webp 900w" 
+        sizes="100vw" width="900" height="260"   alt="View of Auckland city from the sea" loading="lazy"/> -->
     </div>
     
     <main>
-        <h1 id="main-title">Welcome</h1>
+        <h1 id="main-title">Membership Application Form</h1>
 <!-- Section events -->
-        <section class="events">
-            <article class="home-container">
-                    <h4 class="titlebar">Events</h4>
-                    <h2>Great Minds Don’t Network Themselves</h2>
-                    <p>Make meaningful business connections that move you forward — one meetup at a time.</p>
-                    <a id="button" href="../chamber/discover.html">Let’s Meet Up</a>
+        <section class="join-events">
+            <article class="memberForm">
+                <form method="get" action="thanks.html">
+
+                    <label for="first-name">First Name</label>
+                    <input type="text" id="first-name" name="first_name" autocomplete="given-name" required>
+
+                    <label for="last-name">Last Name</label>
+                    <input type="text" id="last-name" name="last_name" autocomplete="family-name" required>
+
+                    <label for="org-title">Organizational Title</label>
+                    <input id="org-title" type="text" name="organizational_title" autocomplete="organization" required>
+
+                    <label for="email">Email</label>
+                    <input id="email" type="email" name="email" autocomplete="email" placeholder="example@domain.com" required>
+
+                    <label for="mobile-number">Mobile Number</label>
+                    <input id="mobile-number" type="tel" name="mobile_number" autocomplete="tel" required>
+
+                    <label for="business-name">Business Name</label>
+                    <input id="business-name" type="text" name="business_name" required>
+
+                    <label for="product">Product Name *</label>
+                    <select name="product" id="product" required>
+                        <option value="" disabled selected>Select a Product</option>
+                    </select>
+
+                    <label for="org-description">Business Description</label>
+                    <textarea id="org-description" name="organization_description" rows="5" cols="40" placeholder="Tell us about your business..."></textarea>
+
+                    <input type="hidden" id="form-timestamp" name="form_timestamp"/>
+
+                    <input type="submit" value="Join Now">
+
+                </form>
+
             </article>
-            <article class="current-weather">
-                    <h4 class="titlebar" >Current Weather</h4>
-                        <div id="weather-box">
-                            <img id="graphic" alt="weather-icon">
-                            <div class="weather-text">
-                                <p id="description"></p>
-                                <p id="temperature"></p>
-                                <p id="humidity"></p>
-                                <p id="high"></p>
-                                <p id="low"></p>
-                                <p id="sunrise"></p>
-                                <p id="sunset"></p>
-                            </div>
-                        </div>         
-            </article>
-            <article class="weather-container">
-                    <h4 class="titlebar">Weather</h4>
-                    <div id="weather-conbox">
-                        <p id="todaytemp"></p>
-                        <p id="tomtemp"></p>
-                        <p id="dayaftertemp"></p>
+
+            <article class="join-event-ad">
+                <h4 class="titlebar">Membership Levels</h4>
+                    <div class="member-levels">
+                        <h3>Non Profit Membership Level</h3>
+                        <button class="but-join" id="non-profit" href="../chamber/discover.html">Learn More</button>
                     </div>
+                    <div class="member-levels">
+                        <h3>Bronze Membership Level</h3>
+                        <button class="but-join" id="bronze"href="../chamber/discover.html">Learn More</button>
+                    </div>
+                    <div class="member-levels">
+                        <h3>Silver Membership Level</h3>
+                        <button class="but-join" id="silver" href="../chamber/discover.html">Learn More</button>
+                    </div>
+                    <div class="member-levels">
+                        <h3>Gold Membership Level</h3>
+                        <button class="but-join" id="gold" href="../chamber/discover.html">Learn More</button>
+                    </div>
+                    <div id="free-gift">
+                        <h1>Join Today & Get a Free VIP Upgrade Gift!</h1>
+                        <h2>FREE SIGNING GIFT:</h2>
+                        <p>VIP Access. Chamber Signature Event (premium Gold-level benefit — now yours just for joining!)</p>
+                    </div>
+                    <div id="showHere"></div>
+                    <dialog id="mydialog">
+                        <div>
+                            <h2>Sample Title</h2>
+                            <button>X</button>
+                        </div>
+                        <p></p>
+                        </dialog>
             </article>
+           
 
         </section>
         
-        <!-- business section -->
+        <!-- business section
         <div class="menu" id="menu-index">
             <button id="grid">Grid</button>
             <button id="list">List</button>
         </div>
-        <div id="card"></div>
+        <div id="card"></div> -->
     
         
     </main>

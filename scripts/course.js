@@ -1,9 +1,11 @@
+// Step 01: Grabs all buttons inside an element with class .course-listing.
 const courseButtons = document.querySelectorAll('.course-listing button');
+
 const course = [
   // ...existing course objects...
 ];
 
-//courseButtons
+// Step 02: Shows only the buttons whose text contains that subject code.
 function filterCourses(subject) {
   courseButtons.forEach(btn => {
     const text = btn.textContent;
@@ -16,25 +18,13 @@ function filterCourses(subject) {
     }
   });
 }
-
-document.getElementById('all').addEventListener('click', e => {
-  e.preventDefault();
-  filterCourses('all');
-});
-
-document.getElementById('cse').addEventListener('click', e => {
-  e.preventDefault();
-  filterCourses('cse');
-});
-
-document.getElementById('wdd').addEventListener('click', e => {
-  e.preventDefault();
-  filterCourses('wdd');
-});
+// Step 02a:Prevents the default behavior (e.preventDefault()) Calls the filterCourses() function with the correct subject type.
+document.getElementById('all').addEventListener('click', e => { e.preventDefault(); filterCourses('all'); });
+document.getElementById('cse').addEventListener('click', e => { e.preventDefault(); filterCourses('cse'); });
+document.getElementById('wdd').addEventListener('click', e => { e.preventDefault(); filterCourses('wdd'); });
 
 
-
-
+// Step 03: This is the main source of data for the rest of your script.
 const courseBtns = document.querySelectorAll('.course-listing button');
 const courses = [
     {
@@ -115,9 +105,13 @@ const courses = [
         completed: false
     }
 ]
+// Step 04: Display Area for the Selected Course, will appear when you click a button.
+const dialog = document.getElementById("course-dialog");
+const detailsDiv = document.getElementById("course-details");
+document.getElementById("close-course-dialog")
+        .addEventListener("click", () => dialog.close());
 
-const detailsDiv = document.getElementById('course-details');
-
+// Step 04a: Show Course Details on Button Click
 courseBtns.forEach(btn => {
   btn.addEventListener('click', function(e) {
     e.preventDefault();
@@ -147,11 +141,12 @@ courseBtns.forEach(btn => {
       </p>
     </div>
   `;
+  dialog.showModal();
 }
   });
 });
 
-// Event - Close card when clicking outside
+// Step 04b: Click Outside to Close the Card
 document.addEventListener('click', function(e) {
   const card = document.querySelector('.course-card');
   if (card && !card.contains(e.target) && !e.target.closest('.course-listing button')) {
@@ -159,6 +154,8 @@ document.addEventListener('click', function(e) {
   }
 });
 
+
+// Step 05: Highlight Completed Courses
 function highlightCompletedCourses() {
   document.querySelectorAll('.wdd-courses, .cse-courses').forEach(btn => {
     const text = btn.textContent.trim();
@@ -174,13 +171,12 @@ function highlightCompletedCourses() {
     }
   });
 }
-
 // Call this function after the DOM is loaded and whenever you update/filter courses
 highlightCompletedCourses();
 
 
 
-// Display total credits for all courses
+// Step 06: Total Credits Calculations
 function getTotalCredits(courseArray) {
   return courseArray.reduce((sum, c) => sum + c.credits, 0);
 }
@@ -193,24 +189,17 @@ function updateCreditInfo(filteredCourses) {
     </div>
   `;
 }
+// Step 06a: Filter Buttons (Credit Updates)
+document.getElementById('all').addEventListener('click', e => { e.preventDefault();
+  updateCreditInfo(courses); });
 
-// Filter logic for buttons
-document.getElementById('all').addEventListener('click', e => {
-  e.preventDefault();
-  updateCreditInfo(courses);
-});
-
-document.getElementById('cse').addEventListener('click', e => {
-  e.preventDefault();
+document.getElementById('cse').addEventListener('click', e => {   e.preventDefault();
   const cseCourses = courses.filter(c => c.subject === 'CSE');
-  updateCreditInfo(cseCourses);
-});
+  updateCreditInfo(cseCourses); });
 
-document.getElementById('wdd').addEventListener('click', e => {
-  e.preventDefault();
+document.getElementById('wdd').addEventListener('click', e => {   e.preventDefault();
   const wddCourses = courses.filter(c => c.subject === 'WDD');
-  updateCreditInfo(wddCourses);
-});
+  updateCreditInfo(wddCourses); });
 
-// Optionally, show all credits on page load
+// Step 06b: Filter Buttons (Credit Updates)
 updateCreditInfo(courses);
