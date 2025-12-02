@@ -157,11 +157,12 @@ article {
  display: flex;
  padding: 10px;
 }
-  footer p, .social{
+.social{
   flex: 1;
 }
 footer p{
     font-size: .7rem;
+    flex:1;
   }
 
 /* -- Join-page ------------------------------ */
