@@ -5,97 +5,100 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Social Tags -->
-    <meta property="og:image" content="images/socialmedia.webp">
-    <meta property="og:url" content="https://nga-hirinuki.github.io/wdd231/">
-    <meta property="og:title" content="Nga Hirinuki - WDD 231 - Web Frontend Development">
-    <meta property="og:description" content="Web & Computer Programming Certificate that equips you with coding, web design, and software development skills for building efficient, user-friendly digital solutions.">
+     <meta property="og:image" content="https://nga-hirinuki.github.io/wdd231/chamber/images/akl-chamber.webp">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://nga-hirinuki.github.io/wdd231/chamber/join.html">
+    <meta property="og:title" content="Auckland Chamber of Commerce">
+    <meta property="og:description" content="A business group that helps Auckland companies connect, grow, learn, share ideas, find support, meet others, solve problems, and succeed together.">
     
-    <title>Nga Hirinuki - WDD 231 - Course Homepage</title>
+    <title>Auckland Chamber of Commerce</title>
     <meta name="description" content="WDD 231 - Web Frontend Development">
     <meta name="author" content="nga hirinuki">
+    
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <!-- css files -->
-     <link rel="favicon" href="images/NH.ico" type="image/x-icon">
-     <!-- css files -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+   
+    
+    <!-- favicon -->
+    <link rel="icon" href="images/tu.ico" type="image/x-icon">
+    
+    <!-- normalize css -->
     <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/base.css">
-    <link rel="stylesheet" href="styles/larger.css">
+    <!-- css base -->
+    <link rel="stylesheet" href="../styles/base.css">
+    <link rel="stylesheet" href="../styles/larger.css">
+    <!-- css chamber -->
+    <link rel="stylesheet" href="styles/pro-base.css">
+    <link rel="stylesheet" href="styles/pro-larger.css">
+ 
+    
     <!-- scripts files -->
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/getdates.js" defer></script>
-    <script src="scripts/course.js" defer></script>
+
 
 </head>
-
 <body>
-    <!-- header section -->
+  <!-- header and nav section -->
     <header>
-        <img src="images/nh.svg" alt="ngahirinuki-logo" width="1" height="1">
-        <span>WDD 231: Web Frontend Development I</span>
+        <img src="images/tu.svg" alt="akl-logo" width="1" height="1" loading="lazy">
+        <span>Tutu</span>
         <button id="ham-btn" class="hamburger" aria-label="navigation"></button>
     </header>
-    <nav id="nav-bar" class="navigation">
+
+<!-- navigation -->
+     <nav class="navigation" id="nav-chamber">
         <ul>
-            <li class="current"><a href="../index.html">Home</a></li>
-            <li ><a href="../chamber/index.html">Chamber Project</a></li>
-            <li><a href="project/index.html">Final Project</a></li>
+            <li class="current"><a href="../chamber/chamber.html">Home</a></li>
+            <li><a href="../chamber/discover.html">Discover</a></li>
+            <li><a href="../chamber/directory.html">Directory</a></li>
+            <li ><a href="../chamber/join.html">Join</a></li>
         </ul>
     </nav>
-    <!-- main section -->
-    <main>
-        <h1 id="main-title">Home</h1>
-        <div class="about-container">
-            <section class="about">
-                <h4 class="title">About Me</h4>            
-                <p>My name’s Ngatokoa, but call me Nga. I was born in the Cook Islands and grew up in New Zealand. These days, I work for myself as a freelance graphic designer. My wife and I have four kids who are all grown up now. In my free time, I’m usually watching rugby or finding any excuse to break out the power tools—I’m always up for a good DIY project. This degree is my mid-life crisis. I wanting something new and its really interesting learning code and it hard for me.</p>
-            </section>
-
-            <section class="photo">
-                <h4 class="title">Student photo</h4>
-                <figure >
-                    <img id="student-photo" src="images/nga.webp" alt="nga-hirinuki" width="150" height="150">
-                    <figcaption>Nga Hirinuki</figcaption>
-                </figure>
-            </section>
-        </div>
-        <section id="courses"> 
-            <h4 class="title">
-                Web and Computer Programming Certificate
-            </h4>
-            <div class="course-list">
-                <button id="all">All</button>
-                <button id="cse">CSE</button>
-                <button id="wdd">WDD</button>
-            </div>
-            <div id="credit-info"></div>
-            <div class="course-listing">
-                <button class="wdd-courses">WDD 130</button>
-                <button class="wdd-courses">WDD 131</button>
-                <button class="wdd-courses">WDD 231</button>
-                <button class="cse-courses">CSE 110</button>
-                <button class="cse-courses">CSE 111</button>
-                <button class="cse-courses">CSE 210</button>
-                <div id="course-details"></div>
-            </div>
-        </section>
-
-    </main>
-    <!-- footer section -->
-    <footer>
-        <div class="social">
-            <a href="https://nga-hirinuki.github.io/wdd231/" target="_blank"><img src="images/github.svg" alt="github" width="16" height="16"></a>
-            <a href="https://www.linkedin.com/in/nga-hirinuki-04177658/" target="_blank"><img src="images/linkedin.svg" alt="linkedin" width="16" height="16"></a>
-            
-        </div>
-        <div>
-        <p>&copy; <span id="currentyear"></span> Nga Hirinuki <br> Last Modified:<span id="lastModified"></span> </p>
-        </div>
-
-    </footer>
+<!-- hero image -->
+    <div class="hero">
+        <h1>Discover Auckland!</h1>
+        <a href="../chamber/discover.html"  id="but-chamber">Check it out</a>
+        <picture>
+                <source media="(min-width: 900px)" srcset="images/join-hero.webp">
+                <source media="(max-width: 500px)" srcset="images/join-hero-sml.webp">
+                <img src="images/join-hero.webp" alt="People at a business Convention" loading="lazy">
+        </picture>
+        <!-- <img src="images/join-hero-sml.webp" srcset="images/join-hero-sml.webp 500w, images/join-hero.webp 900w" 
+        sizes="100vw" width="900" height="260"   alt="View of Auckland city from the sea" loading="lazy"/> -->
+    </div>
     
-</body>
+    <main>
+       
+           
+           
 
+        </section>
+        
+        <!-- business section
+        <div class="menu" id="menu-index">
+            <button id="grid">Grid</button>
+            <button id="list">List</button>
+        </div>
+        <div id="card"></div> -->
+    
+        
+    </main>
+
+    <footer>
+        <div>
+            <p> Auckland Chamber of Commerce <br>127 Universal Drive <br>Henderson, Auckland 0610<br>info@Aklcoc.org<br>(064) 09 628 3244</p>
+            </div>
+            <div class="social">
+                 <a href="https://nga-hirinuki.github.io/wdd231/" target="_blank"><img src="images/github.svg" alt="github" width="16" height="16"></a>
+                <a href="https://www.linkedin.com/in/nga-hirinuki-04177658/" target="_blank"><img src="images/linkedin.svg" alt="linkedin" width="16" height="16"></a>
+            </div>
+            <div>
+            <p>WDD231 Class Project <br>Nga Hirinuki<br>&copy; <span id="currentyear"></span> Auckland Chamber of Commerce <br> 
+                Web Sources<br> Last Modification:<span id="lastModified"></span> </p>
+            </div>
+    </footer>
+</body>
 </html>

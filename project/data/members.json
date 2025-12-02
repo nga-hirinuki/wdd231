@@ -1,0 +1,61 @@
+{
+  "members": [
+    {
+      "name": "HarbourTech Solutions",
+      "address": "12 Quay Street, Auckland CBD, Auckland",
+      "phone": "+64 9 555 1234",
+      "website": "www.harbourtech.co.nz",
+      "imageUrl": "images/harbourtech.webp",
+      "membership_level": "Gold Member"
+    },
+    {
+      "name": "Skyline Creative Studio",
+      "address": "85 Karangahape Road, Newton, Auckland",
+      "phone": "+64 9 555 5678",
+      "website": "www.skylinecreative.co.nz",
+      "imageUrl": "images/skyline.webp",
+      "membership_level": "Silver Member"
+    },
+    {
+      "name": "Aroha Wellness Centre",
+      "address": "230 Ponsonby Road, Ponsonby, Auckland",
+      "phone": "+64 9 555 7890",
+      "website": "www.arohawellness.co.nz",
+      "imageUrl": "images/aroha.webp",
+      "membership_level": "Non-profit"
+    },
+    {
+      "name": "Pacific Freight Logistics",
+      "address": "49 Onehunga Mall, Onehunga, Auckland",
+      "phone": "+64 9 555 2468",
+      "website": "www.pacificfreight.co.nz",
+      "imageUrl": "images/pacificfreight.webp",
+      "membership_level": "Gold Member"
+    },
+    {
+      "name": "KiwiBuild Contractors",
+      "address": "14 Dominion Road, Mt Eden, Auckland",
+      "phone": "+64 9 555 3344",
+      "website": "www.kiwibuild.co.nz",
+      "imageUrl": "images/kiwibuild.webp",
+      "membership_level": "Silver Member"
+    },
+    {
+      "name": "UrbanEats Cafe",
+      "address": "33 Queen Street, Auckland CBD, Auckland",
+      "phone": "+64 9 555 9090",
+      "website": "www.urbaneats.co.nz",
+      "imageUrl": "images/urbaneats.webp",
+      "membership_level": "Non-profit"
+    },
+    {
+      "name": "North Shore Marine",
+      "address": "76 Wairau Road, Glenfield, Auckland",
+      "phone": "+64 9 555 4455",
+      "website": "www.northshoremarine.co.nz",
+      "imageUrl": "images/northshoremarine.webp",
+      "membership_level": "Silver Member"     
+    }
+  ]
+
+}
