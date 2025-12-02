@@ -53,9 +53,6 @@ body {
     text-decoration: none;
     color: #fff;
   }
-  #but-article a{
-    color: #fff;
-  }
 
     #main-title {  
     margin: 0 10px 0 0;
@@ -72,10 +69,7 @@ article {
   background-color: #9c1581;
   padding-bottom: 25px;
 }
-.home-container h2, .home-container p{
-  color: #fff;
-  padding: 10px 15px ;
-}
+
 #button{
   background-color:#fff;
   color: #9c1581;
@@ -91,7 +85,7 @@ article {
 }
 
 .weather-text {
-  vertical-align: top;;
+  vertical-align: top;
 }
 .weather-text p{
   color: #002333;
@@ -126,11 +120,16 @@ article {
   font-size: 1.5rem;
   margin: 0;
   text-align: left;
+  color: #fff;
+  padding: 10px 15px ;
 }
 .home-container p {
   font-size: 1.1rem;
   margin-top: -10px;
+  color: #fff;
+  padding: 10px 15px ;
 }
+
 .titlebar {
   margin: 0;
   padding: 10px;
@@ -162,7 +161,7 @@ article {
 }
 footer p{
     font-size: .7rem;
-    flex:1;
+    flex: 1;
   }
 
 /* -- Join-page ------------------------------ */
