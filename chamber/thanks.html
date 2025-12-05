@@ -7,85 +7,71 @@
     <!-- Social Tags -->
      <meta property="og:image" content="https://nga-hirinuki.github.io/wdd231/chamber/images/akl-chamber.webp">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://nga-hirinuki.github.io/wdd231/chamber/index.html">
+    <meta property="og:url" content="https://nga-hirinuki.github.io/wdd231/chamber/join.html">
     <meta property="og:title" content="Auckland Chamber of Commerce">
-    <meta property="og:description" content="A business group that helps Auckland companies connect, grow, learn, share ideas, find support, meet others, solve problems, and succeed together.">
+    <meta property="og:description" content="A business group that connect,find support, meet others, solve problems, and succeed together.">
     
     <title>Auckland Chamber of Commerce</title>
-    <meta name="description" content="WDD 231 - Web Frontend Development">
+    <meta name="description" content="This content showcase all the different levels of Membership for potential customers to choose .">
     <meta name="author" content="nga hirinuki">
     
     <!-- fonts -->
-     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
    
+    
     <!-- favicon -->
     <link rel="icon" href="images/akl-icon.ico" type="image/x-icon">
     
     <!-- normalize css -->
     <link rel="stylesheet" href="styles/normalize.css">
-    <!-- css base -->
-    <link rel="stylesheet" href="../styles/base.css">
-    <link rel="stylesheet" href="../styles/larger.css">
+    
     <!-- css chamber -->
     <link rel="stylesheet" href="styles/ch-base.css">
     <link rel="stylesheet" href="styles/ch-larger.css">
     <link rel="stylesheet" href="styles/form.css">
  
+    
     <!-- scripts files -->
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/getdates.js" defer></script>
-    <script src="scripts/membersRandom.js" defer></script>
-    <script src="scripts/weather.js" defer></script>
     <script src="scripts/join-form.js" defer></script>
 
-    <script type="module" src="scripts/join-but.js" defer></script>
+    <script type="module" src="scripts/join-but.js"></script>
 
 </head>
 <body>
   <!-- header and nav section -->
     <header>
-        <img src="images/akl-icon.svg" alt="akl-logo" width="1" height="1" loading="lazy">
+        <img src="images/akl-icon.png" alt="akl-logo city of sails" width="1" height="1" loading="lazy">
         <span>Auckland Chamber of Commerce</span>
-        <button id="ham-btn" class="hamburger" aria-label="navigation"></button>
     </header>
 
 <!-- navigation -->
 
-    <nav id="nav-bar" class="navigation" >
-        <ul>
-            <li ><a href="../index.html">Home</a></li>
-            <li class="current"><a href="chamber/chamber.html">Chamber Project</a></li>
-            <li><a href="../project/index.html">Final Project</a></li>
-        </ul>
-    </nav>
-     <nav class="navigation" id="nav-chamber">
-        <ul>
-            <li><a href="../chamber/chamber.html">Home</a></li>
-            <li><a href="../chamber/discover.html">Discover</a></li>
-            <li><a href="../chamber/directory.html">Directory</a></li>
-            <li class="current"><a href="../chamber/join.html">Join</a></li>
-        </ul>
-    </nav>
+    
 <!-- hero image -->
-    <div class="hero">
-        <h1>Discover Auckland!</h1>
-        <a href="../chamber/discover.html"  id="but-chamber">Check it out</a>
+    <div class="hero-img">
         <picture>
-                <source media="(min-width: 900px)" srcset="/chamber/images/join-hero.webp" loading="lazy">
-                <source media="(max-width: 500px)" srcset="/chamber/images/join-hero-sml.webp" loading="lazy">
-                <img src="/chamber/images/join-hero.webp" alt="View of Auckland city from the sea" loading="lazy">
+                <source media="(min-width: 900px)" srcset="/chamber/images/thanks-hero.webp" loading="lazy">
+                <source media="(max-width: 500px)" srcset="/chamber/images/thanks-hero-sml.webp" loading="lazy">
+                <img src="/chamber/images/thanks-hero.webp" alt="View of Auckland city from the sea" loading="lazy">
         </picture>
         <!-- <img src="images/join-hero-sml.webp" srcset="images/join-hero-sml.webp 500w, images/join-hero.webp 900w" 
         sizes="100vw" width="900" height="260"   alt="View of Auckland city from the sea" loading="lazy"/> -->
     </div>
     
     <main>
-        <h1 id="main-title">Thank-you. Your Application will be processed</h1>
-       
+        <div class="thanks">
+            <h1> Thank-you </h1>
+            <h3>Your Application will be processed</h3>
+       </div>
         <div>
             <div id="results"></div>
+        </div>
+        <div class="close">
+            <a href="join.html">close</a>
         </div>
                     
            

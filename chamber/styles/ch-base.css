@@ -269,7 +269,34 @@ margin-top: -30px;
 #mydialog li{
 text-align: left;
 }
-
+/* ------------------------------- join thanks page  */
+.thanks h1{
+  font-size: 4rem;
+  text-align: center;
+}
+.thanks h3{
+  text-align: center;
+  padding-bottom: 30px;
+}
+.close{
+  padding-top:50px ;
+  text-align: center;
+}
+.close a{
+  background-color:#159A9C;
+  color:#fff;
+  padding: 10px 70px;
+  margin: 0 auto;
+  text-decoration: none;
+  border-radius: 7px;
+  border: solid 3px  #159A9C;  
+}/*button*/
+.thanks a:hover {
+  color:#002333;
+  cursor: pointer;
+  background-color: #fff;
+  border: solid 3px  #159A9C;
+}
 /* ------------------------------- footer ------------------------------ */
  footer {
  display: flex;
