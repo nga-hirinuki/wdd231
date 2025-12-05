@@ -11,16 +11,23 @@ black               { color: #0D0D0D; }
 /* ------------------------------- Global Styles ------------------------------ */
 body {
 
-	font-family: Montserrat, Helvetica, sans-serif;
+	font-family: "Montserrat", sans-serif;
 }
 
 h1,h2{
-  color: #8EA66A;
+   font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+ color: #31401B;
 }
 h3,h4{
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
   color: #31401B;
 }
 p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  line-height: 1.6rem;
   color:#1C2611;
 }
 span{
@@ -73,6 +80,7 @@ header span {
   display: none;
   background-color:#A9BF78;
   margin: 0 auto;
+  font-weight: 400;
 }
  .navigation.show, .pro-nav.show {
   display: block; 
@@ -87,6 +95,7 @@ header span {
   padding: .8rem 30px;
   text-decoration: none;
   color: #1C2611;
+   
 }
 .current a {
   background-color:#31401B;
@@ -97,8 +106,6 @@ header span {
   background-color:#1C2611;
   color:#fff;
 }
-
-
 
 /* ------------------------------- hero ------------------------------ */
 
@@ -116,6 +123,10 @@ header span {
   max-width: 860px;;
   margin: 0 auto;
   padding: 0 20px 20px 20px;
+}
+.site-info h1{
+  font-size: 3rem;
+  margin-top: 0;
 }
 
  /* ------ Footer ------------------------------------------------------------------- */
