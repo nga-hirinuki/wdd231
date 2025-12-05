@@ -77,11 +77,10 @@ header span {
   text-decoration: none;
   color:#002333;
 }
-.current {
-  background-color:#159A9C;
-}
+
 .current a {
   color:#fff;
+  background-color:#159A9C;
 }
 .navigation a:hover {
   background-color: #002333;

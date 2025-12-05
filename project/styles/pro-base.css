@@ -8,43 +8,98 @@ Green pastel light  { color: #A9BF78; }
 black               { color: #0D0D0D; } 
 */
 
-/* ------------------------------- main ------------------------------ */
+/* ------------------------------- Global Styles ------------------------------ */
+body {
 
+	font-family: Montserrat, Helvetica, sans-serif;
+}
 
+h1,h2{
+  color: #8EA66A;
+}
+h3,h4{
+  color: #31401B;
+}
+p {
+  color:#1C2611;
+}
+span{
+  color: #A9BF78;
+}
+header{
+  background-color:#1C2611;
+}
 
-  
+/* ------ Header -------------------------------------------------------------- */
+header {
+  display: grid;
+  grid-template-columns: 24px auto 44px;
+  align-items: end;
+  column-gap: 8px;
+  background-color:#1C2611;
+  color: #fff;
+} 
+
+header img {
+  display: block;
+  width: 100%;
+  height: auto;
+  padding: 7px;
+}
+
+header span {
+  font-size: 1.2rem;
+  padding: 7px;
+ 
+}
+
+.hamburger {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 2rem;
+  color: #A9BF78
+}
+
+.hamburger::before {
+  content: "\2630";
+}
+
+.hamburger.show::before {
+  content: "\00D7";
+}  
 /* -------------------------------nav ------------------------------ */
-
-.pro-nav {
+.navigation, .pro-nav{
   display: none;
-  background-color: #002333;
+  background-color:#A9BF78;
   margin: 0 auto;
 }
-.pro-nav.show {
+ .navigation.show, .pro-nav.show {
   display: block; 
 }
-.pro-nav a {
-  color:#ffffff;
-  display: block;
-  padding: .8rem 30px;
-  text-decoration: none;
-}
-.current {
-  background-color:#9c1581;
-}
-
-.pro-nav ul {
+.navigation ul, .pro-nav ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
+.navigation a {
+  display: block;
+  padding: .8rem 30px;
+  text-decoration: none;
+  color: #1C2611;
+}
 .current a {
+  background-color:#31401B;
   color:#fff;
 }
+
 .navigation a:hover {
-  background-color: #002333;
+  background-color:#1C2611;
   color:#fff;
 }
+
+
+
 /* ------------------------------- hero ------------------------------ */
 
 .tutu-hero {
@@ -61,4 +116,42 @@ black               { color: #0D0D0D; }
   max-width: 860px;;
   margin: 0 auto;
   padding: 0 20px 20px 20px;
+}
+
+ /* ------ Footer ------------------------------------------------------------------- */
+footer {
+  background-color:#0D0D0D;
+  padding: 1rem 10px;
+}
+
+footer p, #lastModified {
+  color: #A9BF78;
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+  column-gap: 8px;
+}
+
+.social a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 22px;
+}
+
+.social img {
+  width: 22px;
+  height: 22px;
+}
+
+.social a:hover {
+  background-color: #ddd;
 }
