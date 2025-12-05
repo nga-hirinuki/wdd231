@@ -94,11 +94,11 @@ footer div p{
     padding:0;
     }
     #show-here{
-    background-color: hsla(0, 0%, 100%, 0);
+    background-color:rgba(255, 255, 255, 0);
    
     }
     #levels-gift{
-    background-color: hsla(0, 0%, 100%, 0);
+    background-color: rgba(255, 255, 255, 0);
     }
 
 }
