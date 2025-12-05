@@ -1,0 +1,53 @@
+@media only screen and (min-width: 38rem) {
+
+    header {
+        grid-template-columns: 24px auto ; 
+    }
+    header, main, nav, footer {
+        max-width: 900px;
+        margin: 0 auto;
+    }
+    .hamburger {
+        display: none;
+    }
+    .navigation{
+        display: block; 
+    }
+    .navigation ul {
+        display: flex;
+    }
+    .navigation a {
+        border: none;
+    }
+    .about-container {
+        display: flex;
+    }
+
+   
+
+    /* ------ about section ------------------------*/
+    .about {
+        flex: 2;
+    }
+    .photo {
+        flex: 1;
+        }
+   
+    .titlebar {
+        margin-top: 0;
+    }
+    section, aside{
+        flex: 1;
+        margin: 1rem 0;
+    }
+    main h1 {
+        margin-left: 0;   
+    }   
+    .course-listing button{  
+      flex-wrap: wrap;
+      max-width: 31.5%;   
+      }
+    
+   
+
+}

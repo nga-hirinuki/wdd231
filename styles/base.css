@@ -24,7 +24,7 @@ header {
   column-gap: 8px;
   background-color:#002333;
   color: #fff;
-}
+} 
 
 header img {
   display: block;
@@ -58,15 +58,15 @@ header span {
 }
 
 /* ------ Navigation ------------------------------------------------------------ */
-.navigation {
+.navigation, .nav-chamber {
   display: none;
   background-color:#DEEFE7;
   margin: 0 auto;
 }
-.navigation.show {
-  display: block;
+ .navigation.show, .nav-chamber.show {
+  display: block; 
 }
-.navigation ul {
+.navigation ul, .nav-chamber ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -87,6 +87,7 @@ header span {
   background-color: #002333;
   color:#fff;
 }
+
 
 /* ------ Main --------------------------------------------------------------------- */
 

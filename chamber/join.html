@@ -26,9 +26,7 @@
     
     <!-- normalize css -->
     <link rel="stylesheet" href="styles/normalize.css">
-    <!-- css base -->
-    <link rel="stylesheet" href="../styles/base.css">
-    <link rel="stylesheet" href="../styles/larger.css">
+    
     <!-- css chamber -->
     <link rel="stylesheet" href="styles/ch-base.css">
     <link rel="stylesheet" href="styles/ch-larger.css">
@@ -54,12 +52,12 @@
     </header>
 
 <!-- navigation -->
-     <nav class="navigation" id="nav-chamber">
+     <nav id="nav-bar" class="nav-chamber"  >
         <ul>
-            <li><a href="../chamber/index.html">Home</a></li>
-            <li><a href="../chamber/discover.html">Discover</a></li>
-            <li><a href="../chamber/directory.html">Directory</a></li>
-            <li class="current"><a href="../chamber/join.html">Join</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="discover.html">Discover</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li class="current"><a href="join.html">Join</a></li>
         </ul>
     </nav>
 <!-- hero image -->
@@ -71,12 +69,13 @@
                 <source media="(max-width: 500px)" srcset="images/join-hero-sml.webp">
                 <img src="images/join-hero.webp" alt="People at a business Convention" loading="lazy">
         </picture>
-        <!-- <img src="images/join-hero-sml.webp" srcset="images/join-hero-sml.webp 500w, images/join-hero.webp 900w" 
-        sizes="100vw" width="900" height="260"   alt="View of Auckland city from the sea" loading="lazy"/> -->
+     
     </div>
     
     <main>
-        <h2 id="main-title">Membership Application Form</h2>
+        <div id="join-title">
+        <h2 >Membership Application Form</h2>
+        </div>
 <!-- Section events -->
         <section class="join-events">
             <article class="memberForm">
@@ -116,30 +115,31 @@
 
             </article>
 
-            <article class="join-event-ad">
-                <h4 class="titlebar">Membership Levels</h4>
-                    <div class="member-levels">
+            <article class="levels">
+                <h4>Membership Levels</h4>
+                    <div>
                         <h3>Non Profit Membership Level</h3>
-                        <button class="but-join" id="non-profit">Learn More</button>
+                        <a id="non-profit">Learn More</a>
                     </div>
-                    <div class="member-levels">
+                     <div>
                         <h3>Bronze Membership Level</h3>
-                        <button class="but-join" id="bronze">Learn More</button>
+                        <a class="but-join" id="bronze">Learn More</a>
                     </div>
-                    <div class="member-levels">
+                     <div>
                         <h3>Silver Membership Level</h3>
-                        <button class="but-join" id="silver">Learn More</button>
+                        <a class="but-join" id="silver">Learn More</a>
                     </div>
-                    <div class="member-levels">
+                    <div>
                         <h3>Gold Membership Level</h3>
-                        <button class="but-join" id="gold" >Learn More</button>
+                        <a class="but-join" id="gold" >Learn More</a>
                     </div>
-                    <div id="free-gift">
+                    <div id="levels-gift">
                         <h2>Join Today & Get a Free VIP Upgrade Gift!</h2>
                         <h2>FREE SIGNING GIFT:</h2>
                         <p>VIP Access. Chamber Signature Event (premium Gold-level benefit — now yours just for joining!)</p>
                     </div>
-                    <div id="showHere"></div>
+                    
+                    <div id="show-here"></div>
                     <dialog id="mydialog">
                         <div>
                             <h2>Sample Title</h2>
@@ -155,16 +155,23 @@
 
     <footer>
         <div>
-            <p> Auckland Chamber of Commerce <br>127 Universal Drive <br>Henderson, Auckland 0610<br>info@Aklcoc.org<br>(064) 09 628 3244</p>
-            </div>
-            <div class="social">
-                 <a href="https://nga-hirinuki.github.io/wdd231/" target="_blank"><img src="images/github.svg" alt="github" width="16" height="16"></a>
-                <a href="https://www.linkedin.com/in/nga-hirinuki-04177658/" target="_blank"><img src="images/linkedin.svg" alt="linkedin" width="16" height="16"></a>
-            </div>
-            <div>
-            <p>WDD231 Class Project <br>Nga Hirinuki<br>&copy; <span id="currentyear"></span> Auckland Chamber of Commerce <br> 
-                Web Sources<br> Last Modification:<span id="lastModified"></span> </p>
-            </div>
+            <p> Auckland Chamber of Commerce </p>
+            <p> 127 Universal Drive </p>
+            <p> Henderson, Auckland 0610</p>
+            <p> info@Aklcoc.org</p>
+            <p> (064) 09 628 3244</p>
+        </div>
+        <div class="social">
+                <a href="https://nga-hirinuki.github.io/wdd231/" target="_blank"><img src="images/github.svg" alt="github" width="16" height="16"></a>
+            <a href="https://www.linkedin.com/in/nga-hirinuki-04177658/" target="_blank"><img src="images/linkedin.svg" alt="linkedin" width="16" height="16"></a>
+        </div>
+        <div>
+            <p>WDD231 Class Project</p> 
+            <p>Nga Hirinuki &copy; <span id="currentyear"></span></p> 
+            <p>Auckland Chamber of Commerce</p>
+            <p>Web Sources</p>
+            <p>Last Modification:<span id="lastModified"></span> </p>
+        </div>
     </footer>
 </body>
 </html>

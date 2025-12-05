@@ -10,63 +10,55 @@ black               { color: #0D0D0D; }
 
 /* ------------------------------- main ------------------------------ */
 
+
+
   
 /* -------------------------------nav ------------------------------ */
 
-#nav-chamber {
+.pro-nav {
+  display: none;
   background-color: #002333;
+  margin: 0 auto;
 }
-#nav-chamber a {
+.pro-nav.show {
+  display: block; 
+}
+.pro-nav a {
   color:#ffffff;
+  display: block;
+  padding: .8rem 30px;
+  text-decoration: none;
 }
-#nav-chamber .current {
+.current {
   background-color:#9c1581;
+}
+
+.pro-nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.current a {
+  color:#fff;
+}
+.navigation a:hover {
+  background-color: #002333;
+  color:#fff;
 }
 /* ------------------------------- hero ------------------------------ */
 
-.hero {
-  text-align: right;
+.tutu-hero {
   display: block;
   margin: 0 auto;
-  width: 500px;
-  height: 165px;
+  padding-bottom: 50px;
+  width:900px;
   }
-  
-  .hero img{
-  position: relative;
-  margin-top: -163px;
-  z-index: -1;
-  }
-
-  .hero h1{
-    z-index: 2;
-    color: #fff;
-    margin-right:30px;
-    padding-top: 60px;
-  }
-
-  #but-chamber{
-    padding: 10px 40px;
-    margin:  30px;
-    border-radius: 7px;
-    border:none;
-    background-color:#9c1581;   
-    text-decoration: none;
-    color: #fff;
-  }
-  #but-article a{
-    text-decoration: none;
-    color: #fff;
-  }
-    #main-title {  
-    margin: 0 10px 0 0;
-    }
   /* ------------------------------- sections ------------------------------ */
 
 /*-------Article--------*/
 
 .site-info{
-  width: 840px;
+  max-width: 860px;;
   margin: 0 auto;
-  padding: 0 30px 20px 30px;
+  padding: 0 20px 20px 20px;
 }
