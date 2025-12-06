@@ -47,9 +47,10 @@ header {
 
 header img {
   display: block;
-  width: 100%;
+  width: 50px;
   height: auto;
   padding: 7px;
+  border:red solid 2px;
 }
 
 header span {

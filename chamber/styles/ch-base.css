@@ -24,9 +24,10 @@ header{
 
 header img {
   display: block;
-  width: 100%;
+  width: 36px;
   height: auto;
   padding: 7px;
+  
 }
 
 header span {
