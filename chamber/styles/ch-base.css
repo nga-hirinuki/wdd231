@@ -107,12 +107,19 @@ header span {
     border:none;  
     background-color:#9c1581; 
   }
+  #hero-disc{
+    margin: 150px 0 0 0;
+}
 
   /* ------------------------------- sections ------------------------------ */
  #home-title{
         display: block;
         padding: 15px 0 0 15px;
     }
+  #discover-title{
+    margin: 0;
+    padding: 55px  0 0 15px;
+  }
 
   /* ------------------------------- home page */
 
@@ -128,7 +135,7 @@ article h4{
   background-color: #002333;
   text-align: left;
 }
-/*  cta-events----------------------*/
+/*  cta-events --------------------------------*/
 
 .cta-events {
   background-color: #9c1581;
@@ -164,6 +171,7 @@ article h4{
  display: flex;
  flex-wrap: wrap;
 background-color:#B4BEC9;
+
 }
 .weather.current {
 flex: 1;
@@ -184,6 +192,10 @@ border:#002333 solid 2px;
   padding-bottom: 20px;
 }
 /*  forecast---------------------------*/
+.forecast img{
+ display: none;
+}
+
 .forecast p{
   text-align: center;
   font-size: 1.1rem;
@@ -193,7 +205,6 @@ border:#002333 solid 2px;
 .forecast .last{
   padding-bottom: 20px;
 }
-
 .menu{
   display: block;
   padding: 30px 0 0 0;
@@ -297,9 +308,69 @@ text-align: left;
   background-color: #fff;
   border: solid 3px  #159A9C;
 }
+
+/* ------------------------------- discover  */
+
+* {
+  box-sizing: border-box;
+}
+
+#allplaces {
+  display: grid;
+  grid-template-columns: 1fr; /* mobile default */
+  gap: 1.5rem;
+  padding: 1rem;
+  max-width: 900px;
+  margin: 0 auto; 
+  
+}/* container for all cards */
+#allplaces div:hover {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  transform: translateY(-3px);
+}
+
+#allplaces > div {
+  border: 2px solid #B4BEC9;
+  border-radius: 8px;
+  display: grid;
+  grid-template-areas:
+    "name"
+    "photograph"
+    "description"
+    "location";
+  background: #fff;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}/* individual card */
+
+#allplaces div h2 {
+  margin: 1rem;
+  grid-area: name;
+}/* title */
+
+#allplaces div img {
+  width: 100%;
+  height: auto;
+  grid-area: photograph;
+  display: block;
+}/* image */
+
+#allplaces div p {
+  margin: 1rem;
+  text-align: left;
+  grid-area: description;
+}/* description text */
+
+#allplaces div address {
+  margin: 1rem;
+  font-style: normal;
+  color:#0066cc;
+  grid-area: location;
+  font-weight: 600;
+}/* location/address */
+
+
 /* ------------------------------- footer ------------------------------ */
  footer {
- display: flex;
  background-color: #002333;
  padding: 20px;
 }
@@ -307,22 +378,16 @@ footer div{
 flex: 1;
 flex-wrap: wrap;
 }
-.social{
-  flex: 1;
-  text-align: center;
-  margin-top: 50px;
-  padding: 10px;
-}
+
 footer p{
   color: #fff;
-  font-size: .8rem;
-  padding: 10px;
-  flex: 1;
+  font-size: .9rem;
+  text-align:center;
+  margin-bottom: -10px;
   }
 
   footer p span{
   color: #fff;
-  
   }
 
 /* ------------------------------- Business cards ------------------------------ */

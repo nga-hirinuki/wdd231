@@ -29,16 +29,15 @@
   
     <!-- css chamber -->
     <link rel="stylesheet" href="styles/ch-base.css">
+    <link rel="stylesheet" href="styles/ch-medium.css">
     <link rel="stylesheet" href="styles/ch-larger.css">
-     <!-- css bus-cards -->
-    <link rel="stylesheet" href="styles/bus-base.css">
-    <link rel="stylesheet" href="styles/bus-larger.css">
+
     
     <!-- scripts files -->
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/getdates.js" defer></script>
-    <script src="scripts/members-random.js" defer></script>
-    <script src="scripts/weather.js" defer></script>
+     <script src="scripts/places.js" type="module"></script>
+
 
 </head>
 <body>
@@ -58,51 +57,25 @@
         </ul>
     </nav>
     <!-- slideshow -->
-    <div class="hero">
-    </div>
+       <div class="hero" id="hero-disc">
+       
+        <picture>
+                <source media="(min-width: 900px)" srcset="images/discover-hero.webp">
+                <source media="(max-width: 500px)" srcset="images/discover-hero-sml.webp">
+                <img src="images/discover-hero-sml.webp"  alt="People at a business Convention" loading="lazy">
+        </picture>
+        </div>
     
     <main>
-        <h1 id="main-title">Discover</h1>
-        <!-- Events and Weather section -->
-        <section class="events">
-            <article class="home-container">
-                    <h4 class="titlebar">Events</h4>
-                    <h2>Great Minds Don’t Network Themselves</h2>
-                    <p>Make meaningful business connections that move you forward — one meetup at a time.</p>
-                    <button>Let’s Meet Up</button>
-            </article>
-            <article class="current-weather">
-                    <h4 class="titlebar" >Current Weather</h4>
-                        <img id="graphic" alt="weather-icon">
-                        <div class="weather-text">
-                            <p id="description"></p>
-                            <p id="temperature"></p>
-                            <p id="humidity"></p>
-                            <p id="high"></p>
-                            <p id="low"></p>
-                            <p id="sunrise"></p>
-                            <p id="sunset"></p>
-                        </div>
-                       
-            </article>
-            <article class="weather-container">
-                    <h4 class="titlebar">Weather</h4>
-                     <p id="todaytemp"></p>
-                        <p id="tomtemp"></p>
-                        <p id="dayaftertemp"></p>
-                    
-            </article>
-
-        </section>
-        
-        <!-- business section -->
-        <div class="menu">
-            <button id="grid">Grid</button>
-            <button id="list">List</button>
+        <div>
+            <h2 id="discover-title"><span id="message"></span></h2>
         </div>
-        <div id="card"></div>
     
-        
+        <!-- places card -->
+        <div id="discard">
+            <div id="allplaces" class="attractions"></div> 
+        </div>
+        </div>
     </main>
 
         <footer>
@@ -113,16 +86,13 @@
             <p> info@Aklcoc.org</p>
             <p> (064) 09 628 3244</p>
         </div>
-        <div class="social">
-                <a href="https://nga-hirinuki.github.io/wdd231/" target="_blank"><img src="images/github.svg" alt="github" width="16" height="16"></a>
-            <a href="https://www.linkedin.com/in/nga-hirinuki-04177658/" target="_blank"><img src="images/linkedin.svg" alt="linkedin" width="16" height="16"></a>
-        </div>
+        
         <div>
             <p>WDD231 Class Project</p> 
             <p>Nga Hirinuki &copy; <span id="currentyear"></span></p> 
             <p>Auckland Chamber of Commerce</p>
             <p>Web Sources</p>
-            <p>Last Modification:<span id="lastModified"></span> </p>
+            <p>Last Modification:&nbsp;<span id="lastModified"></span> </p>
         </div>
     </footer>
 </body>

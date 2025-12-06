@@ -1,5 +1,6 @@
-@media only screen and (min-width: 38rem) {
 
+@media only screen and (min-width: 38rem) {
+  
     body, .hero{
         width: 900px;
         margin: 0 auto;
@@ -22,6 +23,13 @@
         font-size: 3rem;
          margin-top: -5px;
     }
+#hero-disc{
+    margin: 150px 0 0 0;
+}
+
+  #discover-title{
+    padding: 120px 10px 10px 20px;
+  }
     #home-title, #join-title{
         display: block;
         margin: 70px 15px -15px;
@@ -29,9 +37,11 @@
     }
 
 /* ------------------------------- footer ----------------------------- */
-footer div p{
-    margin: -3px;
+footer  {
+    display: flex;
+    padding-bottom: 30px;
 }
+
 
   /* -------------------------------------------- home page */
     .home{
@@ -101,5 +111,28 @@ footer div p{
     #levels-gift{
     background-color: rgba(255, 255, 255, 0);
     }
-
+    /* ------------------------------------------- discover */
+    
+    #allplaces {
+    grid-template-columns: repeat(2, 1fr);
+    }
+    #allplaces div img {
+        width: 420px;
+    }
+    #allplaces div p{
+         width: 350px;
+         line-height: 1.3em;
+    }
+   
+    /*  forecast---------------------------*/
+    .forecast p{
+    text-align: center;
+    font-size: 1.1rem;
+        color: #002333;
+    margin-bottom: -5px;
+    }
+    .forecast .last{
+    padding-bottom: 20px;
+    }
 }
+

@@ -28,9 +28,8 @@
     <link rel="stylesheet" href="styles/normalize.css">
   
     <!-- css chamber -->
-    <link rel="stylesheet" href="styles/pro-base.css" media="print" onload="this.media='all'">
-    <noscript><link rel="stylesheet" href="styles/pro-base.css"></noscript>
-    <link rel="stylesheet" href="styles/pro-larger.css">
+    <link rel="stylesheet" href="styles/pro-base.css" media="print">
+    <link rel="stylesheet" href="styles/pro-larger.css" >
 
     <style>
     /* Critical CSS for header and hero */
@@ -68,7 +67,7 @@
         <picture>
                 <source media="(min-width: 900px)" srcset="images/tutu-hero.webp">
                 <source media="(max-width: 500px)" srcset="images/tutu-hero-sml.webp">
-                <img src="images/tutu-hero-sml.webp" height="100vh" alt="People at a business Convention" loading="lazy">
+                <img src="images/tutu-hero-sml.webp" max-width="500px" height="100vh" alt="People at a business Convention" loading="lazy">
         </picture>
     </div>
         <article class="site-info">
