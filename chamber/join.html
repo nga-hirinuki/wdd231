@@ -36,10 +36,7 @@
     <!-- scripts files -->
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/getdates.js" defer></script>
-    <script src="scripts/members-random.js" defer></script>
-    <script src="scripts/weather.js" defer></script>
     <script src="scripts/form.js" defer></script>
-
     <script type="module" src="scripts/join-but.js"></script>
 
 </head>
@@ -62,20 +59,22 @@
     </nav>
 <!-- hero image -->
     <div class="hero">
-        <h1>Discover Auckland!</h1>
-        <a href="discover.html">Check it out</a>
         <picture>
                 <source media="(min-width: 900px)" srcset="images/join-hero.webp">
                 <source media="(max-width: 500px)" srcset="images/join-hero-sml.webp">
                 <img src="images/join-hero.webp" alt="People at a business Convention" loading="lazy">
         </picture>
+        <div class="hero-text">
+            <h2>Discover Auckland!</h2>
+            <a href="discover.html">Check it out</a>
+        </div>
      
     </div>
     
     <main>
-        <div id="join-title">
-        <h2 >Membership Application Form</h2>
-        </div>
+        
+        <h1 class="home-title">Membership Application Form</h1>
+        
 <!-- Section events -->
         <div class="join-events">
             <div class="memberForm">

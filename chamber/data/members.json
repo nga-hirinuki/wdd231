@@ -2,7 +2,7 @@
   "members": [
     {
       "name": "HarbourTech Solutions",
-      "address": "12 Quay Street, Auckland CBD, Auckland",
+      "address": "12 Quay Street, CBD, Auckland",
       "phone": "+64 9 555 1234",
       "website": "www.harbourtech.co.nz",
       "imageUrl": "images/harbourtech.webp",
@@ -42,7 +42,7 @@
     },
     {
       "name": "UrbanEats Cafe",
-      "address": "33 Queen Street, Auckland CBD, Auckland",
+      "address": "33 Queen Street, CBD, Auckland",
       "phone": "+64 9 555 9090",
       "website": "www.urbaneats.co.nz",
       "imageUrl": "images/urbaneats.webp",

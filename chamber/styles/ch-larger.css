@@ -1,7 +1,7 @@
 
 @media only screen and (min-width: 38rem) {
   
-    body, .hero{
+    body{
         width: 900px;
         margin: 0 auto;
     }
@@ -19,21 +19,23 @@
     .nav-chamber ul {
         display: flex;
     }
-    .hero h1{
-        font-size: 3rem;
+    .hero h2{
+        font-size:3rem;
          margin-top: -5px;
     }
-#hero-disc{
-    margin: 150px 0 0 0;
-}
+
 
   #discover-title{
     padding: 120px 10px 10px 20px;
   }
-    #home-title, #join-title{
+    #join-title{
         display: block;
-        margin: 70px 15px -15px;
+        margin:0px 15px -15px;
         padding: 25px 0 3px;
+    }
+
+    #home-title{
+   margin: 30px 0 15px 15px;
     }
 
 /* ------------------------------- footer ----------------------------- */
@@ -68,35 +70,120 @@ footer  {
     }
 
    /* -- busines directory list view ------------------------ */
-    .member-card img{
     
-    display: block;
-    }/* -- default img --*/
 
-    .list-view *.member-card {
-        flex-direction: row;
-        text-align: center;
-    }
-    .list-view .member-card img {
-    width: 100px;
-    height: 100px;
-    display: block;
-    margin-right:20px;
-    }
-    .list-view .member-card h2,
-    .list-view .member-card p {
-    text-align: left;
-    }
-    .grid-view .member-card h2{
-    text-align: center;
-    }
-    .member-card h2 {
-    font-size: 1.8rem;
-    } /* -- business name --*/
-    .member-card .membership {
-   font-size: 1rem;
-    color: #b88a00;
-    }/* -- business membership --*/
+/* ---------------------------------- card --*/
+.member-card{
+  display: flex;
+}
+.member-card img {
+  display: block;
+  height: 120px;
+  width: 120px;
+  margin-left: 10px;
+} /* -- list image --*/
+
+.member-card h2 {
+  display: flex;
+  flex-direction: column; 
+  justify-content: center; 
+  width: 27%;
+  margin-left: 30px;
+  text-align: left;
+} 
+.member-card .membership{
+ width: 20%;
+ font-size: 1.4rem;
+ margin: 0 20px;
+}
+.member-card p {
+  font-size: 1rem;
+  line-height: 1.5rem;
+} /* -- list text --*/
+
+/* ---------------------------------------- Grid view toggle */
+
+.grid-view {
+
+  gap: 0 !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.grid-view .member-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+    "name name"
+    "img membership"
+    "address address";
+    margin: 20px 10px 30px 10px !important;
+
+}/* -- grid flow --*/
+
+.grid-view .member-card img{
+  margin-right:20px;
+  display: block;
+  height: 100px;
+  width: 100px;
+}/* -- default img --*/
+
+.grid-view .member-card h2 {
+  grid-area: name; 
+  text-align: center;
+  padding-bottom: 20px;
+  font-size: 1.5rem;
+  width: 100%;
+} 
+.grid-view .member-card .membership{
+grid-area: membership;
+flex-direction: column; 
+
+}
+.grid-view .member-card p {
+  grid-area: address;
+  text-align: center;
+  padding-top: 20px;
+ 
+}
+
+/* ---------------------------------------- List view toggle */
+
+.list-view {
+  gap:20px;
+}
+
+.list-view .member-card{
+  display: flex;
+}
+.list-view .member-card img {
+  display: block;
+  height: 120px;
+  width: 120px;
+  margin-left: 10px;
+  
+} /* -- list image --*/
+
+.list-view .member-card h2 {
+  display: flex;
+  flex-direction: column; 
+  justify-content: center; 
+  width: 27%;
+  margin-left: 30px;
+  text-align: left;
+
+} 
+.list-view .member-card .membership{
+ width: 20%;
+ font-size: 1.4rem;
+ margin: 0 20px;
+
+}
+.list-view .member-card p {
+  font-size: 1rem;
+  line-height: 1.5rem;
+} /* -- list text --*/
+
 
     /* ------------------------------------------- join page */
    .join-events{
