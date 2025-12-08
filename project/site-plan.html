@@ -20,7 +20,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
    
-    
+    <!-- preload hero images -->
+     <link rel="preload" as="image" href="images/tutu-hero.webp" type="image/webp" media="(min-width: 900px)">
+<link rel="preload" as="image" href="images/tutu-hero-sml.webp" type="image/webp" media="(max-width: 500px)">
     <!-- favicon -->
     <link rel="icon" href="images/tutu-logo.ico" type="image/x-icon">
     
@@ -58,7 +60,7 @@
         <picture>
             <source media="(min-width: 900px)" srcset="images/tutu-hero.webp">
             <source media="(min-width: 500px)" srcset="images/tutu-hero-sml.webp">
-            <img src="images/tutu-hero.webp" alt="Tutu image of coding program on screen" loading="lazy">
+            <img src="images/tutu-hero.webp" alt="Tutu image of coding program on screen">
         </picture>
     </div>
         <article class="site-info">
