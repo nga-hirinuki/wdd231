@@ -5,122 +5,134 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Social Tags -->
-     <meta property="og:image" content="https://nga-hirinuki.github.io/wdd231/project/images/tutu-social.webp">
+    <meta property="og:image" content="https://nga-hirinuki.github.io/wdd231/project/images/tutu-social.webp">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://nga-hirinuki.github.io/wdd231/project/index.html">
     <meta property="og:title" content="Final Project - Tutu website Assignment wdd231">
-    <meta property="og:description" content="The website’s purpose is to show the graphic design and web development services offered.">
-    
+    <meta property="og:description"
+        content="The website’s purpose is to show the graphic design and web development services offered.">
+
     <title>Project Tutu website - WDD231</title>
-    <meta name="description" content="The website’s purpose is to show the graphic design and web development services offered.">
+    <meta name="description"
+        content="The website’s purpose is to show the graphic design and web development services offered.">
     <meta name="author" content="nga hirinuki">
-    
+
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
 
     <!-- preload hero images -->
-     <link rel="preload" as="image" href="images/nh-hero.webp" type="image/webp" media="(min-width: 900px)">
+    <link rel="preload" as="image" href="images/nh-hero.webp" type="image/webp" media="(min-width: 900px)">
     <link rel="preload" as="image" href="images/nh-hero-sml.webp" type="image/webp" media="(max-width: 500px)">
     <!-- favicon -->
     <link rel="icon" href="images/nh-logo.ico" type="image/x-icon">
-    
+
     <!-- normalize css -->
     <link rel="stylesheet" href="styles/normalize.css">
-  
+
     <!-- css project -->
     <link rel="stylesheet" href="styles/pro-base.css">
-    <link rel="stylesheet" href="styles/pro-larger.css" >
-    <link rel="stylesheet" href="styles/form.css" >
- 
+    <link rel="stylesheet" href="styles/pro-larger.css">
+    <link rel="stylesheet" href="styles/form.css">
+
     <!-- scripts files -->
     <script src="scripts/getdates.js" defer></script>
     <script src="scripts/navigation.js" defer></script>
-    
+
 </head>
+
 <body>
-<main>
-  <!-- header and nav section -->
-   <header>
-        <img src="images/nh-logo.png" alt="ngahirinuki-logo" width="1" height="1">
-        <span>NGATOKHIR</span>
-        <button id="ham-btn" class="hamburger" aria-label="navigation"></button>
-    </header>
-    
-<!-- navigation -->
-     <nav id="nav-bar" class="navigation">
-        <ul>
-            <li class="current"><a href="project/index.html">Home</a></li>
-            <li ><a href="project/packages.html">Packages</a></li>
-            <li><a href="project/works.html">Works</a></li> 
-            <li ><a href="project/site-plan.html">Site Plan</a></li>
-        </ul>
-    </nav>
-<!-- hero image -->
-    <div class="tutu-hero">
-          <picture>
-            <source media="(min-width: 900px)" srcset="images/nh-hero.webp">
-            <source media="(min-width: 500px)" srcset="images/nh-hero-sml.webp">
-            <img src="images/nh-hero.webp" alt="Tutu image of coding program on screen">
-        </picture>
-    </div>
-    <div>
-        <h1> Your Website & Design, Simplified</h1>
-        <p> 
-           Subscription-based web development and graphic design services for small businesses 
-           — predictable pricing, consistent quality, and all-in-one solutions. 
-        </p>
-    
-        <article>
-            <h2> What We Offer:</h2>
-            <p>At NGATOKHIR, we make professional web development and graphic design 
-                accessible through simple monthly subscriptions. Work with a dedicated 
-                professional who knows your brand inside-out.</p>
-                <ul>
-                    <li><strong>Web Development:</strong> Custom websites, landing pages, e-commerce solutions, and ongoing updates.</li>
-                    <li> <strong>Graphic Design:</strong> Logos, branding, social media graphics, marketing materials, and more.</li>
-                    <li><strong>Combo Packages:</strong> Get both web and design services in one convenient monthly plan — our most popular choice!</li>
-                </ul>     
-        </article>
-        <article>
-            <h2> Why Subscription-Based Works:</h2>
-           
+    <main>
+        <!-- header and nav section -->
+        <header>
+            <img src="images/nh-logo.png" alt="ngahirinuki-logo" width="1" height="1">
+            <span>NGATOKHIR</span>
+            <button id="ham-btn" class="hamburger" aria-label="navigation"></button>
+        </header>
+
+        <!-- navigation -->
+        <nav id="nav-bar" class="navigation">
             <ul>
-                <li>Predictable costs, no surprise invoices.</li>
-                <li>Consistent updates and improvements for your web and design needs.</li>
-                <li>Scale your services as your business grows.</li>
-                <li>Save time and money compared to hiring full-time staff or freelancers individually.</li>
+                <li class="current"><a href="index.html">Home</a></li>
+                <li><a href="packages.html">Packages</a></li>
+                <li><a href="works.html">Works</a></li>
+                <li><a href="site-plan.html">Site Plan</a></li>
             </ul>
-        </article>
-        <article>
-            <h2> Popular Choice:</h2>
+        </nav>
+        <!-- hero image -->
+        <div class="tutu-hero">
+            <picture>
+                <source media="(min-width: 900px)" srcset="images/nh-hero.webp">
+                <source media="(min-width: 500px)" srcset="images/nh-hero-sml.webp">
+                <img src="images/nh-hero.webp" alt="Tutu image of coding program on screen">
+            </picture>
+        </div>
+        <div>
+            <h1> Your Website & Design, Simplified</h1>
+            <p>
+                Subscription-based web development and graphic design services for small businesses
+                — predictable pricing, consistent quality, and all-in-one solutions.
+            </p>
+
+            <article>
+                <h2> What We Offer:</h2>
+                <p>At NGATOKHIR, we make professional web development and graphic design
+                    accessible through simple monthly subscriptions. Work with a dedicated
+                    professional who knows your brand inside-out.</p>
+                <ul>
+                    <li><strong>Web Development:</strong> Custom websites, landing pages, e-commerce solutions, and
+                        ongoing updates.</li>
+                    <li> <strong>Graphic Design:</strong> Logos, branding, social media graphics, marketing materials,
+                        and more.</li>
+                    <li><strong>Combo Packages:</strong> Get both web and design services in one convenient monthly plan
+                        — our most popular choice!</li>
+                </ul>
+            </article>
+            <article>
+                <h2> Why Subscription-Based Works:</h2>
+
+                <ul>
+                    <li>Predictable costs, no surprise invoices.</li>
+                    <li>Consistent updates and improvements for your web and design needs.</li>
+                    <li>Scale your services as your business grows.</li>
+                    <li>Save time and money compared to hiring full-time staff or freelancers individually.</li>
+                </ul>
+            </article>
+            <article>
+                <h2> Popular Choice:</h2>
                 <p>
-                    Most clients choose our combo packages because they get both web and design support together. 
+                    Most clients choose our combo packages because they get both web and design support together.
                     It’s the easiest way to maintain a professional, consistent brand online while maximizing value.
                 </p>
-                </article>
+            </article>
 
-        <article id="button">
-        <a class="buttons"  href="project/packages.html">Start Your Subscription Today</a>
-        </article>
-        
-        
+            <article id="button">
+                <a class="buttons" href="project/packages.html">Start Your Subscription Today</a>
+            </article>
+
+
 
     </main>
 
     <footer>
         <div>
-            <p> Project: Tutu <br>127 Universal Drive <br>Henderson, Auckland 0610<br>info@tutu.co.nz<br>(064) 09 628 3244</p>
+            <p> Project: Tutu <br>127 Universal Drive <br>Henderson, Auckland 0610<br>info@tutu.co.nz<br>(064) 09 628
+                3244</p>
         </div>
         <div class="social">
-            <a href="https://nga-hirinuki.github.io/wdd231/" target="_blank"><img src="images/github.svg" alt="github" width="16" height="16"></a>
-            <a href="https://www.linkedin.com/in/nga-hirinuki-04177658/" target="_blank"><img src="images/linkedin.svg" alt="linkedin" width="16" height="16"></a>
+            <a href="https://nga-hirinuki.github.io/wdd231/" target="_blank"><img src="images/github.svg" alt="github"
+                    width="16" height="16"></a>
+            <a href="https://www.linkedin.com/in/nga-hirinuki-04177658/" target="_blank"><img src="images/linkedin.svg"
+                    alt="linkedin" width="16" height="16"></a>
         </div>
         <div>
-            <p>WDD231 Class Project <br>Nga Hirinuki<br>&copy; <span id="currentyear"></span> Project - Tutu <br> 
-            <a href="attributions.html">Attributions</a><br> Last Modification: <span id="lastModified"></span> </p>
+            <p>WDD231 Class Project <br>Nga Hirinuki<br>&copy; <span id="currentyear"></span> Project - Tutu <br>
+                <a href="attributions.html">Attributions</a><br> Last Modification: <span id="lastModified"></span>
+            </p>
         </div>
     </footer>
 </body>
+
 </html>
