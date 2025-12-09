@@ -1,14 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Social Tags -->
-     <meta property="og:image" content="https://nga-hirinuki.github.io/wdd231/project/images/tutu-social.webp">
+     <meta property="og:image" content="https://nga-hirinuki.github.io/wdd231/project/images/nh-social.webp">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://nga-hirinuki.github.io/wdd231/project/index.html">
+    <meta property="og:url" content="https://nga-hirinuki.github.io/wdd231/project/site-plan.html">
     <meta property="og:title" content="Final Project - Tutu website Assignment wdd231">
     <meta property="og:description" content="The website’s purpose is to show the graphic design and web development services offered.">
     
@@ -19,13 +18,14 @@
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-   
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    
     <!-- preload hero images -->
-     <link rel="preload" as="image" href="images/tutu-hero.webp" type="image/webp" media="(min-width: 900px)">
-<link rel="preload" as="image" href="images/tutu-hero-sml.webp" type="image/webp" media="(max-width: 500px)">
+     <link rel="preload" as="image" href="images/nh-hero.webp" type="image/webp" media="(min-width: 900px)">
+    <link rel="preload" as="image" href="images/nh-hero-sml.webp" type="image/webp" media="(max-width: 500px)">
+    
     <!-- favicon -->
-    <link rel="icon" href="images/tutu-logo.ico" type="image/x-icon">
+    <link rel="icon" href="images/nh-logo.ico" type="image/x-icon">
     
     <!-- normalize css -->
     <link rel="stylesheet" href="styles/normalize.css">
@@ -39,58 +39,57 @@
     <script src="scripts/navigation.js" defer></script>
 </head>
 <body>
-  <!-- header section -->
+<main>
+  <!-- header and nav section -->
+   <header>
+        <img src="images/nh-logo.png" alt="ngahirinuki-logo" width="1" height="1">
+        <span>NGATOKHIR</span>
+        <button id="ham-btn" class="hamburger" aria-label="navigation"></button>
+    </header>
     
-    <nav id="nav-bar" class="navigation">
+<!-- navigation -->
+     <nav id="nav-bar" class="navigation">
         <ul>
-            <li ><a href="/index.html">Home</a></li>
-            <li class="current"><a href="chamber/directory.html">Chamber Project</a></li>
-            <li><a href="chamber/directory.html">Final Project</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li ><a href="packages.html">Packages</a></li>
+            <li><a href="works.html">Works</a></li> 
+            <li class="current"><a href="site-plan.html">Site Plan</a></li>
         </ul>
     </nav>
-    <header class="hero"></header>
-<main>
-    <h1>Attributions</h1>
-    <section >
-        <ul>
-            <li><h3>Site images</h3></li>
-            <li><p>All images provided from <a href=https://www.pexels.com>pexel.com</a></p> </li>
-            <li><p>chatgpt provided all content for the site. All fictitious </p></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-        </ul>
-    </section>
-    
-   
-    
-</main>
+<!-- hero image -->
+    <div class="tutu-hero">
+        <picture>
+            <source media="(min-width: 900px)" srcset="images/nh-hero.webp">
+            <source media="(min-width: 500px)" srcset="images/nh-hero-sml.webp">
+            <img src="images/nh-hero.webp" alt="Tutu image of coding program on screen">
+        </picture>
+    </div>
+        <article class="site-info">
+            <h1>Attributions</h1>
+            <section >
+                <ul>
+                    <li><h3>Site images</h3></li>
+                    <li><p>All images provided from <a href=https://www.pexels.com>pexel.com</a></p> </li>
+                    <li><p>chatgpt provided all content for the site. All fictitious </p></li>
+                    <li></li>
+                
+                </ul>
+            </section>
+        </article>  
+    </main>
 
-<footer>
-     <div>
-        <p> Auckland Chamber of Commerce <br>127 Universal Drive <br>Henderson, Auckland 0610<br>info@Aklcoc.org<br>(064) 09 628 3244</p>
+    <footer>
+        <div>
+            <p> Project: NGATOKHIR <br>127 Universal Drive <br>Henderson, Auckland 0610<br>info@tutu.co.nz<br>(064) 09 628 3244</p>
         </div>
         <div class="social">
-            <a href="" m target="_blank"><img src="images/github.svg" alt="github" width="16" height="16"></a>
-            <a href="" m target="_blank"><img src="images/linkedin.svg" alt="linkedin" width="16" height="16"></a>
-            <a href="" m target="_blank"><img src="images/facebook.svg" alt="facebook" width="16" height="16"></a>
+            <a href="https://nga-hirinuki.github.io/wdd231/" target="_blank"><img src="images/github.svg" alt="github" width="16" height="16"></a>
+            <a href="https://www.linkedin.com/in/nga-hirinuki-04177658/" target="_blank"><img src="images/linkedin.svg" alt="linkedin" width="16" height="16"></a>
         </div>
         <div>
-        <p>WDD231 Class Project <br>Nga Hirinuki<br>&copy; <span id="currentyear"></span> Auckland Chamber of Commerce <br> 
-            Web Sources<br> Last Modification:<span id="lastModified"></span> </p>
+            <p>WDD231 Class Project <br>Nga Hirinuki<br>&copy; <span id="currentyear"></span> Project - Tutu <br> 
+            <a href="attributions.html">Attributions</a><br> Last Modification: <span id="lastModified"></span> </p>
         </div>
-</footer>
+    </footer>
 </body>
 </html>
