@@ -2,7 +2,6 @@
 
     /* ------------------------------- nav ----------------------------- */
  body {
-    font-family: "Montserrat", sans-serif;
   width: 900px;
   margin: 0 auto;
 }
@@ -19,6 +18,64 @@
     .navigation ul {
         display: flex;
     }
+    .statement, .pointer, .key-points{
+        display: flex;  
+    }
+      .key-points{
+        display: flex;
+    }
+    .key-point5{
+        display: block;
+        width:50%;
+    }
+     .key-point5 h2, .points h2{
+        margin-bottom: -10px;
+    }
+    .member-form {
+        display: block;
+        width:88%;
+    }
+    .statement h1{
+        display: block;
+        font-size: 3.6rem; 
+         line-height: 4.5rem;
+        width: 50%;
+        font-weight: 100;
+        display: flex;
+        flex-direction: column; 
+        justify-content: center; 
+        margin-right: 30px;
+    }
+    .statement p{
+        display: block;
+        font-size: 1rem; 
+        line-height: 1.8rem;
+        width: 50%;
+        display: flex;
+        flex-direction: column; 
+        justify-content: center; 
+    }
+    .para {
+       margin-bottom: -15px;
+    }
+    .para-last {
+       margin-top: -15px;
+    }
+    ul li{
+        font-size: 1rem; 
+        line-height: 1.8rem; 
+    }
+    .points{
+        width: 50%;
+       border: 2px solid #d5e1b8;
+        border-radius: 15px;
+        margin: 15px;
+        padding: 20px;
+    }
+    .points p{
+        width: 100%;
+    }
+
 
 
    

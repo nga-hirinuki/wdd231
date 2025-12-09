@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Social Tags -->
+     <meta property="og:image" content="https://nga-hirinuki.github.io/wdd231/project/images/tutu-social.webp">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://nga-hirinuki.github.io/wdd231/project/index.html">
+    <meta property="og:title" content="Final Project - Tutu website Assignment wdd231">
+    <meta property="og:description" content="The website’s purpose is to show the graphic design and web development services offered.">
+    
+    <title>Project Tutu website - WDD231</title>
+    <meta name="description" content="The website’s purpose is to show the graphic design and web development services offered.">
+    <meta name="author" content="nga hirinuki">
+    
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+   
+    <!-- preload hero images -->
+     <link rel="preload" as="image" href="images/tutu-hero.webp" type="image/webp" media="(min-width: 900px)">
+<link rel="preload" as="image" href="images/tutu-hero-sml.webp" type="image/webp" media="(max-width: 500px)">
+    <!-- favicon -->
+    <link rel="icon" href="images/tutu-logo.ico" type="image/x-icon">
+    
+    <!-- normalize css -->
+    <link rel="stylesheet" href="styles/normalize.css">
+  
+    <!-- css chamber -->
+    <link rel="stylesheet" href="styles/pro-base.css">
+    <link rel="stylesheet" href="styles/pro-larger.css" >
+ 
+    <!-- scripts files -->
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
+</head>
+<body>
+<main>
+  <!-- header and nav section -->
+   <header>
+        <img src="images/nga-logo.png" alt="ngahirinuki-logo" width="1" height="1">
+        <span>NGATOKHIR</span>
+        <button id="ham-btn" class="hamburger" aria-label="navigation"></button>
+    </header>
+    
+<!-- navigation -->
+     <nav id="nav-bar" class="navigation">
+        <ul>
+            <li><a href="project/index.html">Home</a></li>
+            <li ><a href="project/packages.html">Packages</a></li>
+            <li><a href="project/works.html">Works</a></li> 
+            <li class="current"><a href="project/site-plan.html">Site Plan</a></li>
+        </ul>
+    </nav>
+<!-- hero image -->
+    <div class="tutu-hero">
+        <picture>
+            <source media="(min-width: 900px)" srcset="images/tutu-hero.webp">
+            <source media="(min-width: 500px)" srcset="images/tutu-hero-sml.webp">
+            <img src="images/tutu-hero.webp" alt="Tutu image of coding program on screen">
+        </picture>
+    </div>
+        <section class="key-points">
+            <article>
+                <div class="member-form">
+                    <form method="get" action="thanks.html">
+
+                        <label for="first-name">First Name</label>
+                        <input type="text" id="first-name" name="first_name" autocomplete="given-name" required>
+
+                        <label for="last-name">Last Name</label>
+                        <input type="text" id="last-name" name="last_name" autocomplete="family-name" required>
+
+                        <label for="org-title">Organizational Title</label>
+                        <input id="org-title" type="text" name="organizational_title" autocomplete="organization" required>
+
+                        <label for="email">Email</label>
+                        <input id="email" type="email" name="email" autocomplete="email" placeholder="example@domain.com" required>
+
+                        <label for="mobile-number">Mobile Number</label>
+                        <input id="mobile-number" type="tel" name="mobile_number" autocomplete="tel" required>
+
+                        <label for="business-name">Business Name</label>
+                        <input id="business-name" type="text" name="business_name" required>
+
+                        <label for="product">Product Name *</label>
+                        <select name="product" id="product" required>
+                            <option value="" disabled selected>Select a Product</option>
+                        </select>
+
+                        <label for="org-description">Business Description</label>
+                        <textarea id="org-description" name="organization_description" rows="5" cols="40" placeholder="Tell us about your business..."></textarea>
+
+                        <input type="hidden" id="form-timestamp" name="form_timestamp">
+
+                        <input type="submit" value="Join Now">
+                    </form>
+                </div>
+            </article>
+        </section>
+
+    </main>
+
+    <footer>
+        <div>
+            <p> Project: Tutu <br>127 Universal Drive <br>Henderson, Auckland 0610<br>info@tutu.co.nz<br>(064) 09 628 3244</p>
+        </div>
+        <div class="social">
+            <a href="https://nga-hirinuki.github.io/wdd231/" target="_blank"><img src="images/github.svg" alt="github" width="16" height="16"></a>
+            <a href="https://www.linkedin.com/in/nga-hirinuki-04177658/" target="_blank"><img src="images/linkedin.svg" alt="linkedin" width="16" height="16"></a>
+        </div>
+        <div>
+            <p>WDD231 Class Project <br>Nga Hirinuki<br>&copy; <span id="currentyear"></span> Project - Tutu <br> 
+            <a href="attributions.html">Attributions</a><br> Last Modification: <span id="lastModified"></span> </p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Social Tags -->
-     <meta property="og:image" content="https://nga-hirinuki.github.io/wdd231/project/images/nh-social.webp">
+     <meta property="og:image" content="https://nga-hirinuki.github.io/wdd231/project/images/tutu-social.webp">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://nga-hirinuki.github.io/wdd231/project/site-plan.html">
+    <meta property="og:url" content="https://nga-hirinuki.github.io/wdd231/project/index.html">
     <meta property="og:title" content="Final Project - Tutu website Assignment wdd231">
     <meta property="og:description" content="The website’s purpose is to show the graphic design and web development services offered.">
     
@@ -19,24 +19,25 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
-    
+
     <!-- preload hero images -->
      <link rel="preload" as="image" href="images/nh-hero.webp" type="image/webp" media="(min-width: 900px)">
     <link rel="preload" as="image" href="images/nh-hero-sml.webp" type="image/webp" media="(max-width: 500px)">
-    
     <!-- favicon -->
     <link rel="icon" href="images/nh-logo.ico" type="image/x-icon">
     
     <!-- normalize css -->
     <link rel="stylesheet" href="styles/normalize.css">
   
-    <!-- css chamber -->
+    <!-- css project -->
     <link rel="stylesheet" href="styles/pro-base.css">
     <link rel="stylesheet" href="styles/pro-larger.css" >
+    <link rel="stylesheet" href="styles/form.css" >
  
     <!-- scripts files -->
     <script src="scripts/getdates.js" defer></script>
     <script src="scripts/navigation.js" defer></script>
+    
 </head>
 <body>
 <main>
@@ -50,66 +51,62 @@
 <!-- navigation -->
      <nav id="nav-bar" class="navigation">
         <ul>
-            <li><a href="project/index.html">Home</a></li>
-            <li ><a href="project/index.html">Service</a></li>
-            <li><a href="project/index.html">Works</a></li> 
-            <li class="current"><a href="project/site-plan.html">Site Plan</a></li>
+            <li class="current"><a href="project/index.html">Home</a></li>
+            <li ><a href="project/packages.html">Packages</a></li>
+            <li><a href="project/works.html">Works</a></li> 
+            <li ><a href="project/site-plan.html">Site Plan</a></li>
         </ul>
     </nav>
 <!-- hero image -->
     <div class="tutu-hero">
-        <picture>
+          <picture>
             <source media="(min-width: 900px)" srcset="images/nh-hero.webp">
             <source media="(min-width: 500px)" srcset="images/nh-hero-sml.webp">
             <img src="images/nh-hero.webp" alt="Tutu image of coding program on screen">
         </picture>
     </div>
-        <article class="site-info">
-            <h1>Individual Project Site Plan</h1>
-            
-            <h3>Site name: NGATOKHIR – Graphic Design & Website Development subscription</h3>
-                <p>The business name is named after me. Taking the first three letters of my name</p>
-            
-            <h4>Site Purpose: </h4>
-                <p>The purpose of this website is to offer businesses an easy, affordable way to 
-                    access professional web development and graphic design through simple monthly 
-                    subscriptions. Instead of hiring multiple freelancers or paying large one-off 
-                    project fees, clients can choose a subscription package that gives them ongoing 
-                    support, consistent updates, and high-quality design and web services every month.</p>
-                
-            <h4>Scenarios</h4>
-
-                <h4>“Scenario 1: The Busy Small Business Owner</h4>
-                <p>“I already have a website, but it’s outdated and I don’t have time to fix it. I also 
-                    constantly need new graphics for social media and promotions. Can I subscribe to a plan 
-                    where you handle both every month?”
+    <div>
+        <h1> Your Website & Design, Simplified</h1>
+        <p> 
+           Subscription-based web development and graphic design services for small businesses 
+           — predictable pricing, consistent quality, and all-in-one solutions. 
+        </p>
+    
+        <article>
+            <h2> What We Offer:</h2>
+            <p>At NGATOKHIR, we make professional web development and graphic design 
+                accessible through simple monthly subscriptions. Work with a dedicated 
+                professional who knows your brand inside-out.</p>
+                <ul>
+                    <li><strong>Web Development:</strong> Custom websites, landing pages, e-commerce solutions, and ongoing updates.</li>
+                    <li> <strong>Graphic Design:</strong> Logos, branding, social media graphics, marketing materials, and more.</li>
+                    <li><strong>Combo Packages:</strong> Get both web and design services in one convenient monthly plan — our most popular choice!</li>
+                </ul>     
+        </article>
+        <article>
+            <h2> Why Subscription-Based Works:</h2>
+           
+            <ul>
+                <li>Predictable costs, no surprise invoices.</li>
+                <li>Consistent updates and improvements for your web and design needs.</li>
+                <li>Scale your services as your business grows.</li>
+                <li>Save time and money compared to hiring full-time staff or freelancers individually.</li>
+            </ul>
+        </article>
+        <article>
+            <h2> Popular Choice:</h2>
+                <p>
+                    Most clients choose our combo packages because they get both web and design support together. 
+                    It’s the easiest way to maintain a professional, consistent brand online while maximizing value.
                 </p>
+                </article>
 
-                <h4>Scenario 2: The Growing Brand Needing Everything Done</h4>
-                <p>“We’re growing fast and need ongoing support — new pages, landing pages, monthly maintenance, 
-                    plus logos, banners, and marketing graphics. Do you have a package that covers both design and 
-                    web so we don’t have to hire multiple freelancers?”
-                </p>
+        <article id="button">
+        <a class="buttons"  href="project/packages.html">Start Your Subscription Today</a>
+        </article>
+        
+        
 
-            <h4>Color Scheme</h4>
-                <p> 
-                    Green Darker--color: #1C2611;<br>
-                    Green Dark--color: #31401B;<br>
-                    Green pastel--color: #8EA66A;<br>
-                    Green pastel light--color: #A9BF78;<br>
-                    black--color: #0D0D0D;<br>
-                </p>
-                
-            <h4>Typography: </h4>
-            <p>font-family: Montserrat, Helvetica, sans-serif; <br>fonts.googleapis.com/css2?family=Montserrat:ital, wght@0,100..900;1,100..900&display=swap</p>
-
-            <h4>Wireframe</h4>
-            <picture>
-                <source media="(min-width: 900px)" srcset="images/wireframe.webp">
-                <source media="(max-width:460px)" srcset="images/wireframe-sml.webp">
-                <img src="images/wireframe-sml.webp" alt="wireframe of project website tutu" loading="lazy">
-            </picture>
-        </article>  
     </main>
 
     <footer>

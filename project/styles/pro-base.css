@@ -10,29 +10,54 @@ black               { color: #0D0D0D; }
 
 /* ------------------------------- Global Styles ------------------------------ */
 body {
-
-	font-family: "Montserrat", sans-serif;
   margin: 0 auto;
+   font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
 }
-
-h1,h2{
-   font-family: "Montserrat", sans-serif;
-  font-weight: 800;
- color: #31401B;
+h1{
+  font-weight:700;
+  font-size: 2.4rem;
+  color: #31401B;
+}
+h2{
+  font-weight:600;
+  font-size: 1.5rem;
+  color: #31401B;
 }
 h3,h4{
-  font-family: "Montserrat", sans-serif;
   font-weight: 700;
   color: #31401B;
 }
-p {
-  font-family: "Montserrat", sans-serif;
+p, li {
   font-weight: 400;
-  line-height: 1.6rem;
+  line-height: 1.5rem;
   color:#1C2611;
 }
 span{
   color: #A9BF78;
+  font-weight: 400;
+}
+
+.buttons{
+  display: block;
+  padding: 10px 20px;
+  background-color:  #A9BF78;
+  text-decoration: none;
+  text-align: center;
+  font-weight: 700;
+  border-radius: 8px;
+  color: #31401B;
+  width: 300px;
+  margin: 0 auto;
+}
+#button{
+  margin: 50px;
+}
+
+section{
+margin: 15px;
 }
 
 
@@ -45,19 +70,16 @@ header {
   background-color:#1C2611;
   color: #fff;
 } 
-
 header img {
   display: block;
   width: 27px;
   height: auto;
   padding: 7px;
- 
 }
-
 header span {
-  font-size: 1.2rem;
-  padding: 7px;
- 
+  font-size: 1.5rem;
+  font-weight: 100;
+  margin: 0  0 6px 15px;
 }
 
 .hamburger {
@@ -92,9 +114,10 @@ header span {
 }
 .navigation a {
   display: block;
-  padding: .8rem 30px;
+  padding: .3rem 30px;
   text-decoration: none;
   color: #1C2611;
+  font-weight: 400;
    
 }
 .current a {
@@ -105,10 +128,11 @@ header span {
 .navigation a:hover {
   background-color:#1C2611;
   color:#fff;
+  font-weight: 400;
 }
 
 
-  /* ------------------------------- sections ------------------------------ */
+/* ------------------------------- sections ------------------------------ */
 
 /*-------Article--------*/
 
