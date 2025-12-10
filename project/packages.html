@@ -11,7 +11,7 @@
     <meta property="og:title" content="Final Project - Tutu website Assignment wdd231">
     <meta property="og:description" content="The website’s purpose is to show the graphic design and web development services offered.">
     
-    <title>Project Tutu website - WDD231</title>
+    <title>Project NGATOKHIR - WDD231</title>
     <meta name="description" content="The website’s purpose is to show the graphic design and web development services offered.">
     <meta name="author" content="nga hirinuki">
     
@@ -24,7 +24,7 @@
      <link rel="preload" as="image" href="images/tutu-hero.webp" type="image/webp" media="(min-width: 900px)">
 <link rel="preload" as="image" href="images/tutu-hero-sml.webp" type="image/webp" media="(max-width: 500px)">
     <!-- favicon -->
-    <link rel="icon" href="images/tutu-logo.ico" type="image/x-icon">
+    <link rel="icon" href="images/nh-logo.ico" type="image/x-icon">
     
     <!-- normalize css -->
     <link rel="stylesheet" href="styles/normalize.css">
@@ -32,16 +32,19 @@
     <!-- css chamber -->
     <link rel="stylesheet" href="styles/pro-base.css">
     <link rel="stylesheet" href="styles/pro-larger.css" >
+    <link rel="stylesheet" href="styles/form.css" >
  
     <!-- scripts files -->
     <script src="scripts/getdates.js" defer></script>
     <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/packages.js" type="module"></script>
+    
 </head>
 <body>
 <main>
   <!-- header and nav section -->
    <header>
-        <img src="images/nga-logo.png" alt="ngahirinuki-logo" width="1" height="1">
+        <img src="images/nh-logo.png" alt="ngahirinuki-logo" width="1" height="1">
         <span>NGATOKHIR</span>
         <button id="ham-btn" class="hamburger" aria-label="navigation"></button>
     </header>
@@ -50,20 +53,31 @@
      <nav id="nav-bar" class="navigation">
         <ul>
             <li><a href="index.html">Home</a></li>
-            <li ><a href="packages.html">Packages</a></li>
+            <li class="current"><a href="packages.html">Packages</a></li>
             <li><a href="works.html">Works</a></li> 
-            <li class="current"><a href="site-plan.html">Site Plan</a></li>
+            <li ><a href="site-plan.html">Site Plan</a></li>
         </ul>
     </nav>
 <!-- hero image -->
     <div class="tutu-hero">
         <picture>
-            <source media="(min-width: 900px)" srcset="images/tutu-hero.webp">
-            <source media="(min-width: 500px)" srcset="images/tutu-hero-sml.webp">
-            <img src="images/tutu-hero.webp" alt="Tutu image of coding program on screen">
+            <source media="(min-width: 900px)" srcset="images/packages-hero.webp">
+            <source media="(min-width: 500px)" srcset="images/packages-hero-sml.webp">
+            <img src="images/packages-hero.webp" alt="Tutu image of coding program on screen">
         </picture>
     </div>
-        <section class="key-points">
+        <section >
+            <h1> Choose Your Perfect Plan</h1>
+            <p>
+                Our subscription plans give your business exactly what it needs without the hassle 
+                of hiring full-time staff. Pick web development, graphic design, or combine both for maximum value!
+            </p>
+
+            <div id="discard">
+            <div id="package" class="attractions">
+            </div> 
+
+        </div>
             <article>
                 <div class="member-form">
                     <form method="get" action="thanks.html">

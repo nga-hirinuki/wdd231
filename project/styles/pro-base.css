@@ -134,7 +134,7 @@ header span {
 
 /* ------------------------------- sections ------------------------------ */
 
-/*-------Article--------*/
+/*------------------------------Article */
 
 .site-info{
   max-width: 900px;
@@ -146,12 +146,68 @@ header span {
   margin-top: 0;
 }
 
+/*------------------------------Packages */
+#package div{
+  border: #8EA66A 1.5px solid;
+  margin: 20px 0;
+  padding: 20px;
+  font-weight: 900;
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas:
+    "name name monthly-fee"
+    "web-development web-development web-development"
+    "design design design"
+    "included included included"
+    "not-included not-included not-included";
+    
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+#package div:hover{
+   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  transform: translateY(-3px);
+}
+
+#name { 
+  grid-area: name; 
+  font-size: 1.7rem;
+  text-align: left;
+}
+#monthly-fee { 
+  grid-area: monthly-fee; 
+  text-align: center;
+  font-size: 1.7rem;
+}
+#web-development { 
+  grid-area: web-development;
+  margin: -10px;
+}
+#design { 
+  grid-area: design;
+  margin:-15px; 
+  padding:15px; 
+}
+#included { 
+  grid-area: included; 
+  padding:15px;
+  font-size: .9rem;
+ }
+#not-included { 
+  grid-area: not-included;
+  margin-top:-20px; 
+  padding:15px; 
+  font-size:.9rem; }
+
+
+
+
+
  /* ------ Footer ------------------------------------------------------------------- */
 footer {
   background-color:#0D0D0D;
   padding: 1rem 10px;
 }
-
 footer p, #lastModified {
   color: #A9BF78;
   margin: 0;
@@ -159,13 +215,11 @@ footer p, #lastModified {
   line-height: 1.5;
   text-align: center;
 }
-
 .social {
   display: flex;
   justify-content: center;
   column-gap: 8px;
 }
-
 .social a {
   display: flex;
   justify-content: center;
@@ -174,12 +228,10 @@ footer p, #lastModified {
   height: 44px;
   border-radius: 22px;
 }
-
 .social img {
   width: 22px;
   height: 22px;
 }
-
 .social a:hover {
   background-color: #ddd;
 }
