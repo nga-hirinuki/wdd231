@@ -11,7 +11,7 @@
     <meta property="og:title" content="Final Project - NGATOKHIR website Assignment wdd231">
     <meta property="og:description" content="The website’s purpose is to show the graphic design and web development services offered.">
     
-    <title>Project Tutu website - WDD231</title>
+    <title>Project: NGATOKHIR - WDD231</title>
     <meta name="description" content="The website’s purpose is to show the graphic design and web development services offered.">
     <meta name="author" content="nga hirinuki">
     
@@ -21,10 +21,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
    
     <!-- preload hero images -->
-     <link rel="preload" as="image" href="images/tutu-hero.webp" type="image/webp" media="(min-width: 900px)">
-<link rel="preload" as="image" href="images/tutu-hero-sml.webp" type="image/webp" media="(max-width: 500px)">
+     <link rel="preload" as="image" href="images/works-hero.webp" type="image/webp" media="(min-width: 900px)">
+<link rel="preload" as="image" href="images/works-hero-sml.webp" type="image/webp" media="(max-width: 400px)">
     <!-- favicon -->
-    <link rel="icon" href="images/tutu-logo.ico" type="image/x-icon">
+    <link rel="icon" href="images/nh-logo.ico" type="image/x-icon">
     
     <!-- normalize css -->
     <link rel="stylesheet" href="styles/normalize.css">
@@ -32,16 +32,20 @@
     <!-- css chamber -->
     <link rel="stylesheet" href="styles/pro-base.css">
     <link rel="stylesheet" href="styles/pro-larger.css" >
+    <link rel="stylesheet" href="styles/portfolio.css" >
  
     <!-- scripts files -->
-    <script src="scripts/getdates.js" defer></script>
+  <script src="scripts/getdates.js" defer></script>
     <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/portfolio.js" type="module"></script>
+    <script src="scripts/port-but.js" type="module"></script>
+
 </head>
 <body>
 <main>
   <!-- header and nav section -->
    <header>
-        <img src="images/tutu-logo.png" alt="ngahirinuki-logo" width="1" height="1">
+        <img src="images/nh-logo.png" alt="ngahirinuki-logo" width="1" height="1">
         <span>WDD 231: Project Tutu</span>
         <button id="ham-btn" class="hamburger" aria-label="navigation"></button>
     </header>
@@ -49,57 +53,44 @@
 <!-- navigation -->
      <nav id="nav-bar" class="navigation">
         <ul>
-            <li><a href="project/index.html">Home</a></li>
-            <li ><a href="project/packages.html">Packages</a></li>
-            <li><a href="project/works.html">Works</a></li> 
-            <li class="current"><a href="project/site-plan.html">Site Plan</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li ><a href="packages.html">Packages</a></li>
+            <li class="current"><a href="works.html">Works</a></li> 
+            <li ><a href="site-plan.html">Site Plan</a></li>
         </ul>
     </nav>
 <!-- hero image -->
     <div class="tutu-hero">
         <picture>
-            <source media="(min-width: 900px)" srcset="images/tutu-hero.webp">
-            <source media="(min-width: 500px)" srcset="images/tutu-hero-sml.webp">
-            <img src="images/tutu-hero.webp" alt="Tutu image of coding program on screen">
+            <source media="(min-width: 900px)" srcset="images/works-hero.webp">
+            <source media="(min-width: 500px)" srcset="images/works-hero-sml.webp">
+            <img src="images/works-hero.webp" alt="Tutu image of coding program on screen">
         </picture>
     </div>
-        <article class="site-info">
-            <h1>Individual Project Site Plan</h1>
-            
-            <h3>Site name: Tutu – Graphic & Website Development Services</h3>
-                <p>This name representing how a client brings an issue or problem that needs to be looked at, adjusted, or fixed.</p>
-            
-            <h4>Site Purpose: </h4>
-                <p>The website’s purpose is to show the graphic design and web development services offered, display sample projects, 
-                    and provide a simple form for clients to request help.</p>
+        <section >
+            <h1> Hear from our clients:</h1>
+            <p>
+               Our subscription-based model gives businesses reliable, high-quality web development 
+               and graphic design every month. Below are examples of the kinds of results our clients 
+               enjoy when they choose a combo package.
+            </p>
+
+             <article class="levels">
                 
-            <h4>Scenarios</h4>
+                    
+                    <!-- Container where buttons will go -->
+                    <div id="show-here" class="portfolio"></div>
 
-                <p>“My website isn’t displaying correctly on mobile. Can FixWeb4Fee help me fix it?”
-                A visitor wants quick help with a common website problem.</p>
+                    <!-- Dialog -->
+                    <dialog id="mydialog" class="port-pop">
+                        <h2>Title</h2>
+                        <div class="info"></div> <!-- Content will be injected here -->
+                        <button>Close</button>
+                    </dialog>
 
-                <p>“I need a simple logo and clean layout for my new business. What design services do you offer?”
-                A visitor is looking for basic graphic design support.Tutu – Graphic & Website Development Services</p>
-
-            <h4>Color Scheme</h4>
-                <p> 
-                    Green Darker--color: #1C2611;<br>
-                    Green Dark--color: #31401B;<br>
-                    Green pastel--color: #8EA66A;<br>
-                    Green pastel light--color: #A9BF78;<br>
-                    black--color: #0D0D0D;<br>
-                </p>
-                
-            <h4>Typography: </h4>
-            <p>font-family: Montserrat, Helvetica, sans-serif; <br>fonts.googleapis.com/css2?family=Montserrat:ital, wght@0,100..900;1,100..900&display=swap</p>
-
-            <h4>Wireframe</h4>
-            <picture>
-                <source media="(min-width: 900px)" srcset="images/wireframe.webp">
-                <source media="(max-width:460px)" srcset="images/wireframe-sml.webp">
-                <img src="images/wireframe-sml.webp" alt="wireframe of project website tutu" loading="lazy">
-            </picture>
-        </article>  
+            </article>
+        
+        </section>
     </main>
 
     <footer>

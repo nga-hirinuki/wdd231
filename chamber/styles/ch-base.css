@@ -255,22 +255,33 @@ border:#002333 solid 2px;
 }
 
 #show-here{
-background-color: #fff;
 margin-bottom: -90px;
 }
-
+#mydialog{
+border: none;
+margin: 20px;
+width: 70%;
+}
 #mydialog div{
 background-color: rgba(255, 255, 255, 0);
 }
 #mydialog button{
 background-color: #fff;
 border:none;
+padding: 0 0 30px 0;
+    }
+#mydialog h2{
+margin:0 auto;
+margin-bottom: -30px;
 }
 #mydialog p{
-margin-top: -30px;
+margin:0 auto;
+line-height: 1.6rem;
 }
 #mydialog li{
 text-align: left;
+
+
 }
 /* ------------------------------- join thanks page  */
 .thanks h1{

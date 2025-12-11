@@ -18,12 +18,10 @@ body {
 }
 h1{
   font-weight:700;
-  font-size: 2.4rem;
-  color: #31401B;
+  color: #8EA66A;
 }
 h2{
-  font-weight:600;
-  font-size: 1.5rem;
+  font-weight:700;
   color: #31401B;
 }
 h3,h4{
@@ -33,23 +31,22 @@ h3,h4{
 p, li {
   font-weight: 400;
   line-height: 1.5rem;
-  color:#1C2611;
+  color:#31401B;
 }
 span{
   color: #A9BF78;
   font-weight: 400;
 }
-
+/* ------------------------------------- button - view packages*/
 .buttons{
   display: block;
-  padding: 10px 20px;
+  padding: 20px 40px;
   background-color:  #A9BF78;
   text-decoration: none;
   text-align: center;
   font-weight: 700;
   border-radius: 8px;
   color: #31401B;
-  width: 300px;
   margin: 0 auto;
 }
 #button{
@@ -149,19 +146,16 @@ header span {
 /*------------------------------Packages */
 #package div{
   border: #8EA66A 1.5px solid;
-  margin: 20px 0;
-  padding: 20px;
+  margin:10px;
+  padding:0 20px;
   font-weight: 900;
   text-align: center;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-areas:
-    "name name monthly-fee"
-    "web-development web-development web-development"
-    "design design design"
-    "included included included"
-    "not-included not-included not-included";
-    
+    "name name name monthly-fee"
+    " webdesign webdesign webdesign webdesign"
+    "included included  included included";    
   transition: box-shadow 0.3s ease, transform 0.3s ease;
 }
 #package div:hover{
@@ -171,36 +165,93 @@ header span {
 
 #name { 
   grid-area: name; 
-  font-size: 1.7rem;
+  font-size: 1.5rem;
+  font-weight: 900;
   text-align: left;
 }
 #monthly-fee { 
   grid-area: monthly-fee; 
-  text-align: center;
-  font-size: 1.7rem;
+  text-align: right;
+  font-size: 1.5rem;
+   font-weight: 900;
 }
-#web-development { 
-  grid-area: web-development;
-  margin: -10px;
+#webdesign { 
+  grid-area: webdesign;
+  font-size: 1rem;
+   font-weight: 900;
+   margin: -10px 0 -5px 0;
 }
-#design { 
-  grid-area: design;
-  margin:-15px; 
-  padding:15px; 
-}
-#included { 
+ 
+#includes { 
   grid-area: included; 
-  padding:15px;
-  font-size: .9rem;
+  font-size: .8rem;
+  line-height: 1.3rem;
+  text-align: left;
  }
-#not-included { 
-  grid-area: not-included;
-  margin-top:-20px; 
-  padding:15px; 
-  font-size:.9rem; }
+ /* ------------------------------- package thanks page  */
+.thanks h1{
+  font-size: 3rem;
+  text-align: center;
+}
+.thanks h3{
+  text-align: center;
+  padding-bottom: 20px;
+}
+#results p{
+  text-align: center;
+}
+.close{
+  padding-top:30px ;
+  text-align: center;
+}
+.close a{
+  background-color:#8EA66A;
+  color:#fff;
+  padding: 15px 70px;
+  margin: 0 auto;
+  text-decoration: none;
+  border-radius: 7px;
+}/*button*/
+.thanks a:hover {
+  color:#002333;
+  cursor: pointer;
+  background-color: #fff;
+  border: solid 3px  #159A9C;
+}
+ /* ------------------------------- portfolio page button  */
+.portfolio{
+  text-align: center;
+}
+.portfolio button{
+  padding: 30px 50px;
+  margin: 10px;
+  text-align: center;
+  background-color: #A9BF78;
+  border-radius: 8px;
+  border: none;
+}
+.port-pop{
+ position: fixed !important;
+         position: fixed !important;
+        top: 50%;
+        left:50%;
+        transform: translate(-50%, -50%);
+        width: 80vw;      /* almost full width on mobile */
+        padding: 15px;
+        border-radius: 8px;
+        border: 1px solid #ccc;
+        background: #fff;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
 
-
-
+    dialog::backdrop {
+        background: rgba(0,0,0,0.3); /* optional overlay */
+    }
+.port-pop button{
+  color: #002333;
+  background-color:#fff;
+  border: none;
+}
 
 
  /* ------ Footer ------------------------------------------------------------------- */
@@ -224,7 +275,7 @@ footer p, #lastModified {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 44px;
+  width: 60px;
   height: 44px;
   border-radius: 22px;
 }

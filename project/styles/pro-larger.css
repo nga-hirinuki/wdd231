@@ -8,6 +8,18 @@
     header {
         grid-template-columns: 24px 1fr; 
     }
+
+    /* ------------------------------------- button - view packages*/
+.buttons{
+  display: block;
+  width: 300px;
+}
+#button{
+  margin: 50px;
+}
+
+
+
     /* ------------------------------- hero ---------------------------- */
   .hamburger {
         display: none;
@@ -75,23 +87,88 @@
     .points p{
         width: 100%;
     }
+/*------------------------------Packages */
+    #package {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    }
+    #package div{
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    "name " 
+    " webdesign "
+    "included"
+    "monthly-fee";    
+    }
+    #name{
+    font-size: 1.6rem;
+    text-align: center;
+    font-weight: 900;
+    }
+    #webdesign { 
+    font-size: .8rem;
+    text-align: center;
+    }
+    #includes { 
+    font-size: .8rem;
+    text-align: center;
+    }
+     #monthly-fee {
+    font-size: 2.3rem;
+    text-align: center;
+    font-weight: 600;
+    margin: 0 0 20px;
+    }
+/*------------------------------WORKS DIALOG PAGE */
+
+.port-pop{
+  position: fixed;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-64%, -50%);
+    width: 90vw;       /* mobile width */
+    max-width: 700px;  /* desktop width */
+    max-height: 90vh;  /* never taller than viewport */
+    padding: 20px;
+    border-radius: 10px;
+    background: #fff;
+    overflow-y: auto;
+    z-index: 9999;
+        border: none;
+}
 
 
 
-   
-    
 
-   
+/* ------ Footer ------------------------------------------------------------------- */
+footer {
+  display: flex;
+  padding: 60px 30px;
+}   
+footer p {
+  width: 100%;
 
-    
-    
-    
- 
-    
-    
-    
-   
-    
-
-  
+} 
+.social {
+  display: flex;
+  justify-content: center;
+  column-gap: 8px;
+  width: 40%;
+}
+.social a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 44px;
+  border-radius: 22px;
+}
+.social img {
+  width: 40px;
+  height: 40px;
+}
+.social a:hover {
+  background-color: #ddd;
+}
 }

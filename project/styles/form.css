@@ -1,13 +1,16 @@
 
 /* ------------------------------- Colour Scheme ------------------------------ */
-/* #B4BEC9 light gray
-/* #159A9C aqua green
-/* #002333 navy blue
-/* #DEEFE7 pastel green
-/* FFFFFF white*/
+/* 
+Green Darker        { color: #1C2611; }
+Green Dark          { color: #31401B; }
+Green pastel        { color: #8EA66A; }
+Green pastel light  { color: #A9BF78; }
+black               { color: #0D0D0D; } 
+*/
 .member-form{
   background-color: #fff;
-  margin: 15px;
+  margin: 0 auto;
+  margin-top: 50px;
 }
 
 fieldset{
@@ -17,16 +20,16 @@ fieldset{
     }
 
 form{
-    background-color: #DEEFE7;
-    padding: 20px 20px 30px;
+    background-color:#A9BF78;
+    padding: 20px 20px 30px 20px;
 
     }
 
 label, input, select {
     display: block;
-    padding: 10px;
-   
+    padding: 10px;  
 }
+
 input, select {
     width: 88%;
 }
@@ -39,10 +42,20 @@ input, select , textarea {
 }
 
 input[type=submit] {
- margin-top: 20px;
- background-color: #159A9C ;
+margin: 0 auto;
+ margin-top: 30px;
+ background-color: #1C2611;
  color: #fff;
  border: none;
  border-radius: 7px;
- width: 93%;
+ width: 53%;
+ 
+}
+@media only screen and (min-width: 38rem) {
+input, select {
+    width: 94%;
+}
+textarea {
+    width: 97%;
+}
 }

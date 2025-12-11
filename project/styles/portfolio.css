@@ -1,0 +1,69 @@
+/* ------------------------------- portfolio page  */
+
+  #portfolio div{
+  border: solid #A9BF78 1px;
+  padding: 5px 20px;
+  margin: 20px 10px;
+  display: grid;
+  grid-template-columns:1fr  ;
+  grid-template-areas:
+    "name "
+     "address "
+    "business_needs  "
+    "package "
+    "description "
+    "testimonial "
+   ;    
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+#portfolio div:hover{
+   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  transform: translateY(-3px);
+}
+
+#business_name{ 
+ 
+  display: block;
+  grid-area:name;
+  margin-bottom: -5px;
+  text-align: center;
+}
+#owner{ 
+  display: none;
+  grid-area:owner;
+   text-align: center;
+}
+#address{ 
+  grid-area: address;
+  margin-bottom: -5px;
+   text-align: center;
+
+}
+#package{ 
+  grid-area: package;
+  margin-bottom: -5px;
+   text-align: center;
+}
+#business_need{ 
+  grid-area: business_needs;
+  margin-bottom: -5px;
+   text-align: center;
+}
+#description{ 
+grid-area: description;
+}
+
+#testimonial{ 
+  display: none;
+  grid-area: testimonial;
+  text-align: center;
+}
+
+
+@media only screen and (min-width: 38rem) {
+     
+    #portfolio div{
+     display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    }
+}

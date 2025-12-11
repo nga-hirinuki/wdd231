@@ -22,30 +22,17 @@ function displayItems(packages) {
         thefees.id = 'monthly-fee';
         thecard.appendChild(thefees)
 
-         //web development
+         //webdesign
         const theweb = document.createElement('h4')
-        theweb.innerText = x.web_development
-        theweb.id ='web-development';
+        theweb.innerText = x.webdesign
+        theweb.id = 'webdesign';
         thecard.appendChild(theweb)
-
-         //design
-        const thedesign = document.createElement('h4')
-        thedesign.innerText = x.design
-        thedesign.id = 'design';
-        thecard.appendChild(thedesign)
 
          //includes
         const theincludes = document.createElement('p')
         theincludes.innerText = x.included
-        theincludes.id = 'included';
-        thecard.appendChild(theincludes)
-
-         //not includes
-        const thenotincl = document.createElement('p')
-        thenotincl.innerText = x.not_included
-        thenotincl.id = 'not-included';
-        thecard.appendChild(thenotincl)
-        
+        theincludes.id = 'includes';
+        thecard.appendChild(theincludes)        
 
         showHere.appendChild(thecard)
     })// end loop
