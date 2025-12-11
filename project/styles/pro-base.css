@@ -12,7 +12,6 @@ black               { color: #0D0D0D; }
 body {
   margin: 0 auto;
    font-family: "Open Sans", sans-serif;
-  font-optical-sizing: auto;
   font-weight: 300;
   font-style: normal;
 }
